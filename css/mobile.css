@@ -167,7 +167,7 @@ li {
     position: relative;
   }
   .banner-1::before {
-    background: rgba(0, 0, 0, 0) url("img/ribbon.png") repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) url("img/mobil img/.ribbon-price") repeat scroll 0 0;
     content: "";
     height: 137px;
     left: -11px;
