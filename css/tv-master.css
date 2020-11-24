@@ -9,14 +9,22 @@
     margin-bottom: 80px;
 
 }
-.container{
-    max-width: 720px;
+
+.mt-40{
+  margin-top: 40px;
 }
 .mb-40{
     margin-bottom: 40px;
 }
 .mb-20{
     margin-top: 40px;
+}
+.card{
+  background-color: none;
+  border: none;
+}
+.medium-6 {
+  width: 50%;
 }
 .section-title h2 {
   font-size: 30px;
@@ -109,101 +117,16 @@ li {
   }
 .gray-bg {background: #f6f6f6;}
 
-.upcoming-pro-img{
-    width: 47.3%;
-}
+
 .f-left{
     float: left;
 }
 
 
-
-
-.upcoming-pro-img img{
-    width: 100%;
-}
-
-.upcoming-pro-info{
-    padding: 0 30px;
-    width: 52.7%;
-}
-.upcoming-pro-info h3 {
-    color: #575757;
-    font-weight: 600;
-    margin: 45px 0 20px;
-  }
-.upcoming-pro-info > p {
-    margin-bottom: 40px;
-  }
   h3 {
     font-size: 20px;
   }
-  .upcoming-time .cdown {
-    display: inline-block;
-    margin-right: 30px;
-    text-align: center;
-  }
-  .up-comming-time .cdown:last-child {
-    margin-right: 0;
-  }
-  .upcoming-time .time-count {
-    border: 1px solid #fcab5b;
-    border-radius: 50%;
-    color: #999999;
-    display: block;
-    font-family: roboto;
-    font-size: 20px;
-    font-weight: 700;
-    height: 40px;
-    line-height: 40px;
-    width: 40px;
-  }
-  .upcoming-time .cdown p {
-    color: #8a8888;
-    line-height: 10px;
-    margin: 10px 0 0;
-  }
-  .banner-item {
-    position: relative;
-  }
-  .banner-1::before {
-    background: rgba(0, 0, 0, 0) url("ribbon.png") repeat scroll 0 0;
-    content: "";
-    height: 137px;
-    left: -11px;
-    position: absolute;
-    top: -11px;
-    width: 146px;
-  }
-  .ribbon-price {
-    left: 15px;
-    position: absolute;
-    top: 30px;
-    transform: rotate(-42deg);
-  }
-  .ribbon-price span {
-    color: #fefefe;
-    font-family: roboto;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 16px;
-  }
-  .banner-img img {
-    width: 100%;
-  }
-  .banner-info {
-    left: 13px;
-    position: absolute;
-    top: 35%;
-  }
-  .banner-featured-list li {
-    color: #666666;
-  }
-  .banner-featured-list li i {
-    margin-right: 10px;
-  }
   
-
 .mb-50{
       margin-bottom: 50px;
   }
@@ -236,6 +159,9 @@ a{
     color: #ffbf7f !important;
     
 }
+.medium-2 {
+  width: 16.6666666667%;
+}
 
 #scrollUp {
     background: #ffbf7f;
@@ -252,3 +178,25 @@ a{
     line-height: 40px;
 }
 
+.active-logo:hover{
+  
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
