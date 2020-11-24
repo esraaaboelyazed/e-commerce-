@@ -19,24 +19,6 @@
     margin-top: 40px;
 }
 
-.body {
-    color: gray;
-    background-color: #E0E0E0;
-    animation-name: example;
-    animation-duration: 3s;
-    animation-delay: 3s;
-    animation-iteration-count: 3;
-}
-
-@keyframes example {
-    25% {
-        background-color: burlywood;
-    }
-    50% {
-        background-color: rgba(95, 3, 3, 0.301);
-    }
-}
-
 .brands {
     padding: 8px;
     margin-top: 50px;
@@ -44,6 +26,7 @@
 }
 
 .brands h2 {
+    text-align: center;
     color: #000;
     font-weight: bold;
     margin-left: 30px;
@@ -51,6 +34,7 @@
 }
 
 .brands p {
+    text-align: center;
     color: #000;
     margin-left: 30px;
 }
@@ -121,24 +105,27 @@
     color: black;
 }
 
-.featured {
+.bestsales {
+    background-color: #E0E0E0;
     padding: 8px;
     margin-top: 30px;
 }
 
-.featured h2 {
+.bestsales h2 {
     color: #000;
     font-weight: bold;
     margin-left: 35px;
     font-size: 35px;
+    text-align: center;
 }
 
-.featured p {
+.bestsales p {
+    text-align: center;
     color: #000;
     margin-left: 35px;
 }
 
-.featured-row {
+.bestsales-row {
     text-align: center;
     width: 95%;
     margin: auto;
