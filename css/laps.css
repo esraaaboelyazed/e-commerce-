@@ -331,19 +331,19 @@ h3 {
 }
 
 .banner-1::before {
-    background: rgba(0, 0, 0, 0) url("imges/labs/announc.png") repeat scroll 0 0;
+    background-image: url('../imges/laptops/ribbon.png');
     content: "";
-    height: 13px;
+    height: 137px;
     left: -11px;
     position: absolute;
     top: -11px;
-    width: 14px;
+    width: 146px;
 }
 
 .ribbon-price {
-    left: 15px;
+    left: 9px;
     position: absolute;
-    top: 30px;
+    top: 33px;
     transform: rotate(-42deg);
 }
 
@@ -352,7 +352,7 @@ h3 {
     font-family: roboto;
     font-size: 20px;
     font-weight: 500;
-    line-height: 16px;
+    line-height: 5px;
 }
 
 .banner-img img {
