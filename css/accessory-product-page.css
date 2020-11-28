@@ -691,5 +691,53 @@ label {
   #scrollUp i {
     line-height: 40px;
   }
+    /*******************comments section************************/
+    #typeComment
+    {
+     display: none;
+  }
+  #sendComment
+  {
+      display: none;
+      width: 10rem;
+      background-color: #575757;
+      border: 1px solid #575757;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+  } 
+  #displayReviews , #addReview
+  {
+      width: 10rem;
+      background-color: #575757;
+      border: 1px solid #575757;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+     
+  }
+  #validateComment 
+  {
+      display: none;
+  }
+   .displayEmpty
+  {
+      color: black;
+      font-size: 1.5rem;
+      font-style: italic;
+      font-weight: 400;
+  }
+  #displayEmptyParagra
+  {
+      font-size: 3rem;
+      font-weight: 500;
+      font-style: italic;
+      color: red;
+     
+  }
 
 
