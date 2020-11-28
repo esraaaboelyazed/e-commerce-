@@ -23,7 +23,7 @@
                     Categories
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Electronics</a>
+                    <a class="dropdown-item" href="electronics.html">Electronics</a>
                     <a class="dropdown-item" href="#">Books</a>
                     <a class="dropdown-item" href="#">Beauty</a>
                     <a class="dropdown-item" href="#"></a>
@@ -31,14 +31,14 @@
                   </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="#aboutUs">About Us</a>
                   </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="#contactUs">Contact Us</a>
                   </li>
                   <li class="nav-item">
                     <li class="nav-item">
-                      <a class="nav-link" href="#">profile</a>
+                      <a class="nav-link" href="profileuser/html/userProfile.html">profile</a>
                     </li>
                     <a class="nav-link" href="LogIn.html">Sign in</a>
                   </li>
@@ -61,8 +61,8 @@
                         <div>
                             <h1 class="mb-3 text-center">SHOPIFY.</h1>
                             <form class="form-inline my-2 my-lg-0 ml-5 ">
-                                <input class="form-control mr-sm-2 ml-5" type="search" placeholder="Search for product" aria-label="Search">
-                                <button class="btn  my-2 my-sm-0 btnChange" type="submit">Search</button>
+                                <input class="form-control mr-sm-2 ml-5" oninput="searchProducts(this.value)" type="search" placeholder="Search for product" aria-label="Search">
+                                <button id="searchProduct" class="btn  my-2 my-sm-0 btnChange" type="submit">Search</button>
                               </form>
                         </div>
                     </div>
@@ -258,7 +258,7 @@
  
          
        <!--start of about us section-->
-          <section class="container aboutUs my-5">
+          <section id="aboutUs" class="container aboutUs my-5">
     <h2 class="text-center mb-3 mt-5">About Us</h2>
     <h5 class="text-center">“I went from selling to my town, to selling n
         ationwide in one week. It’s a whole new business now.” </h5>
@@ -268,7 +268,7 @@
 
 
         <!--start of contact us section-->
-        <section class=" contactUs my-5 py-3">
+        <section id="contactUs" class=" contactUs my-5 py-3">
          <div class="container">
             <h2 class="text-center mb-3 pt-5">Contact Us</h2>
             <p class="text-center">Lorem ipsum dolor sit ametla tenetueprehene sequi hic, dolore enim explicabo quibusdam illo?</p>
