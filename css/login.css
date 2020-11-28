@@ -1,22 +1,25 @@
-body{
-    font-family:  Tahoma, Geneva, sans-serif;
+body {
+    font-family: Tahoma, Geneva, sans-serif;
     color: #FFF;
     background-size: cover;
 }
-.signin{
-    background: rgba(44,62,88,0.7);
+
+.signin {
+    background: rgba(44, 62, 88, 0.7);
     padding: 40px;
     width: 250px;
     margin: auto;
     margin-top: 80px;
-    height:400px;
+    height: 400px;
     margin-left: auto;
 }
-form{
-   width: 240px; 
-   text-align: center;
+
+form {
+    width: 240px;
+    text-align: center;
 }
-input{
+
+input {
     width: 240px;
     text-align: center;
     background: transparent;
@@ -30,7 +33,8 @@ input{
     outline: none;
     color: #FFF;
 }
-input[type=button]{
+
+#login-btn {
     border: none;
     width: 190px;
     background: #FFF;
@@ -41,24 +45,29 @@ input[type=button]{
     border-radius: 15px;
     cursor: pointer;
 }
-input[type=button]:hover{
+
+#login-btn:hover {
     color: #FFF;
-    background-color:#000;
+    background-color: #000;
 }
 
-h2{
+h2 {
     color: #fff;
 }
-a{
+
+a {
     color: yellow;
     text-decoration: blink;
 }
-a:hover{color: skyblue;}
-.container{
+
+a:hover {
+    color: skyblue;
+}
+
+.container {
     display: flex;
     flex-direction: row;
     width: 100%;
-   
 }
 
 ::placeholder {
