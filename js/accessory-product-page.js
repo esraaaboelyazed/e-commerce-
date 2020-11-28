@@ -51,7 +51,7 @@ function takeComments()
            comment3 : typeComment.value
        }
        commentsContainer3.push(valueOfComment);
-       localStorage.setItem("comment2" ,JSON.stringify(commentsContainer3 ));
+       localStorage.setItem("comment3" ,JSON.stringify(commentsContainer3 ));
        makeSureIfLSEmpty();
        clearTextArea();
 
@@ -86,4 +86,15 @@ function takeComments()
  //            temp += `<p class="my-2">`+commentsContainer[i].comment+`</p>`
 
 
+//img shange ----------------------------------------------------------//
+var image=document.getElementById("zoom_03");
+
+
+function hover(image) {
+    image.setAttribute('src', 'imges/accessory-img/hphone2.jpg');
+  }
+  
+  function unhover(image) {
+    image.setAttribute('src', 'imges/accessory-img/hphone.jpg');
+  }
 

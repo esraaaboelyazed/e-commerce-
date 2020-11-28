@@ -87,3 +87,14 @@ var commentsContainer ;  //array to store comments in local
 
 
 
+//img shange ----------------------------------------------------------//
+var image=document.getElementById("zoom_03");
+
+
+function hover(image) {
+    image.setAttribute('src', 'imges/laptops/dell1.jpg');
+  }
+  
+  function unhover(image) {
+    image.setAttribute('src', 'imges/laptops/dell4.jpg');
+  }
