@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -9,57 +10,68 @@
     margin-bottom: 80px;
 
 }
+.mt-40{
+  margin-top: 40px;
+}
 .mt-80{
   margin-top: 80px;
-
-}
-/*navbar sevtion-------------------------------------------------------------------*/
-.changeBg
-{
-    background:linear-gradient(90deg ,#B6C2C4, #6E7E8A ,#9AA4AE);
-}
-
-
-.container{
-    max-width: 720px;
 }
 .mb-40{
     margin-bottom: 40px;
 }
 .mb-20{
-    margin-top: 40px;
+    margin-top: 20px;
 }
-.section-title h2 {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 24px;
+.card{
+    border:none;
 }
-.text-left{
-    text-align: left !important;
-}
-.uppercase{
-    text-transform: uppercase;
-}
-h6{
-    font-size: 14px;
-    
-}
-h2,h6,h5,p,h3{
-  font-family: 'Raleway', sans-serif;
-  
-  color: #434343;
-  margin-top: 0px;
-  font-style: normal;
-  font-weight: 400;
-}
-h3{
-    color:#737373 ;
-}
-div.card:hover {
+
+.card img:hover {
     
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
   }
+  .section-title h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  .text-left{
+      text-align: left !important;
+  }
+  .uppercase{
+      text-transform: uppercase;
+  }
+  h6{
+      font-size: 14px;
+      
+  }
+  h2,h6,h5,p,h3{
+    font-family: 'Raleway', sans-serif;
+    
+    color: #434343;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  h3{
+      color:#737373 ;
+  }
+
+
+  div.card:hover {
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+  }
+  /*navbar sevtion-------------------------------------------------------------------*/
+.changeBg
+{
+    background:linear-gradient(90deg ,#B6C2C4, #6E7E8A ,#9AA4AE);
+}
+
+/*products section-----------------------------------------------------------------------------*/
+
 .product-info {
     background: #f6f6f6 none repeat scroll 0 0;
     padding: 20px 0;
@@ -120,101 +132,16 @@ li {
   }
 .gray-bg {background: #f6f6f6;}
 
-.upcoming-pro-img{
-    width: 47.3%;
-}
+
 .f-left{
     float: left;
 }
 
 
-
-
-.upcoming-pro-img img{
-    width: 100%;
-}
-
-.upcoming-pro-info{
-    padding: 0 30px;
-    width: 52.7%;
-}
-.upcoming-pro-info h3 {
-    color: #575757;
-    font-weight: 600;
-    margin: 45px 0 20px;
-  }
-.upcoming-pro-info > p {
-    margin-bottom: 40px;
-  }
   h3 {
     font-size: 20px;
   }
-  .upcoming-time .cdown {
-    display: inline-block;
-    margin-right: 30px;
-    text-align: center;
-  }
-  .up-comming-time .cdown:last-child {
-    margin-right: 0;
-  }
-  .upcoming-time .time-count {
-    border: 1px solid #fcab5b;
-    border-radius: 50%;
-    color: #999999;
-    display: block;
-    font-family: roboto;
-    font-size: 20px;
-    font-weight: 700;
-    height: 40px;
-    line-height: 40px;
-    width: 40px;
-  }
-  .upcoming-time .cdown p {
-    color: #8a8888;
-    line-height: 10px;
-    margin: 10px 0 0;
-  }
-  .banner-item {
-    position: relative;
-  }
-  .banner-1::before {
-    background: rgba(0, 0, 0, 0) url("img/mobil img/.ribbon-price") repeat scroll 0 0;
-    content: "";
-    height: 137px;
-    left: -11px;
-    position: absolute;
-    top: -11px;
-    width: 146px;
-  }
-  .ribbon-price {
-    left: 15px;
-    position: absolute;
-    top: 30px;
-    transform: rotate(-42deg);
-  }
-  .ribbon-price span {
-    color: #fefefe;
-    font-family: roboto;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 16px;
-  }
-  .banner-img img {
-    width: 100%;
-  }
-  .banner-info {
-    left: 13px;
-    position: absolute;
-    top: 35%;
-  }
-  .banner-featured-list li {
-    color: #666666;
-  }
-  .banner-featured-list li i {
-    margin-right: 10px;
-  }
   
-
 .mb-50{
       margin-bottom: 50px;
   }
@@ -232,6 +159,12 @@ a{
     border-bottom: none !important;
 
 }
+.card-footer a{
+  color: #434343;
+}
+.card-footer a:hover{
+  color:#FF7F00;
+}
 .pro-tap-menu ul li a {
     color: #999999 !important;
     display: block;
@@ -247,22 +180,23 @@ a{
     color: #ffbf7f !important;
     
 }
-
+.medium-2 {
+  width: 16.6666666667%;
+}
 #scrollUp {
-    background: #ffbf7f;
-    bottom: 10px;
-    color: #ffffff;
-    font-size: 20px;
-    height: 40px;
-    right: 10px;
-    text-align: center;
-    transition: all 0.3s ease 0s;
-    width: 40px;
+  background: #ffbf7f;
+  bottom: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  height: 40px;
+  right: 10px;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  width: 40px;
 }
 #scrollUp i {
-    line-height: 40px;
+  line-height: 40px;
 }
-
  /************ footer section********/
  footer
  {
