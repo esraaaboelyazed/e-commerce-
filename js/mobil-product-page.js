@@ -17,7 +17,6 @@ if (localStorage.getItem("comment1") == null)
    sendComment.style.display = "none" ;
    displayEmptyParagra.style.display = "block" ;
    displayEmptyParagra.innerHTML = "there is any reviews YET!";
-   console.log("fadya")
 }
 else
 {

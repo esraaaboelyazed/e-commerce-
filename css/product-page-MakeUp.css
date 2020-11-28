@@ -19,6 +19,12 @@
   .imgs-zoom-area img {
     width: 100% !important;
   }
+  /***************** start nav section*******************/
+.changeBg
+{
+    background:linear-gradient(90deg ,#B6C2C4, #6E7E8A ,#9AA4AE);
+}
+
 
    /*******************comments section************************/
    #typeComment
