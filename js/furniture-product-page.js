@@ -90,10 +90,10 @@ var image=document.getElementById("zoom_03");
 
 
 function hover(image) {
-    image.setAttribute('src', 'imges/Home&kitchen/cap1.jpg');
+    image.setAttribute('src', 'imges/Home&kitchen/cap2.jpg');
   }
   
   function unhover(image) {
-    image.setAttribute('src', 'imges/Home&kitchen/cap2.jpg');
+    image.setAttribute('src', 'imges/Home&kitchen/cap1.jpg');
   }
 
