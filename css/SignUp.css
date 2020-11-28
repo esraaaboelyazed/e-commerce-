@@ -12,7 +12,7 @@ body {
     margin-top: 90px;
     height: 430px;
     margin-left: auto;
-    /* 10px*/
+    
 }
 
 form {
@@ -62,4 +62,18 @@ h2 {
 ::placeholder {
     color: aliceblue;
     opacity: 1;
+}
+/***************** start nav section*******************/
+.changeBg
+{
+     background:linear-gradient(90deg ,#B6C2C4, #6E7E8A ,#9AA4AE); 
+}
+#editLogo
+{
+  width: 60px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }

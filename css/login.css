@@ -3,6 +3,20 @@ body {
     color: #FFF;
     background-size: cover;
 }
+/***************** start nav section*******************/
+.changeBg
+{
+    background:linear-gradient(90deg ,#B6C2C4, #6E7E8A ,#9AA4AE);
+}
+#editLogo
+{
+  width: 60px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
 
 .signin {
     background: rgba(44, 62, 88, 0.7);
@@ -51,20 +65,20 @@ input {
     background-color: #000;
 }
 
-h2 {
+section h2 {
     color: #fff;
 }
 
-a {
+ section a {
     color: yellow;
     text-decoration: blink;
 }
 
-a:hover {
+ section a:hover {
     color: skyblue;
 }
 
-.container {
+ section .container {
     display: flex;
     flex-direction: row;
     width: 100%;
