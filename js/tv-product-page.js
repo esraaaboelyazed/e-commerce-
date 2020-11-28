@@ -87,3 +87,14 @@ function takeComments()
 
 
 
+//img shange ----------------------------------------------------------//
+var image=document.getElementById("zoom_03");
+
+
+function hover(image) {
+    image.setAttribute('src', 'imges/TV-img/4.jpg');
+  }
+  
+  function unhover(image) {
+    image.setAttribute('src', 'imges/TV-img/1.jpg');
+  }

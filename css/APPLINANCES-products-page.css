@@ -12,25 +12,6 @@
 .container{
     max-width: 960;
 }
-.mt-100{
-    margin-top: 100px;
-  }
-  /*logo-----------------*/
-  #editLogo
-  {
-  width: 60px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  }
-/*navbar sevtion-------------------------------------------------------------------*/
-.changeBg
-{
-    background:linear-gradient(90deg ,#B6C2C4, #6E7E8A ,#9AA4AE);
-}
-
 
 .imgs-zoom-area {
     width: 100%;
@@ -38,6 +19,13 @@
   .imgs-zoom-area img {
     width: 100% !important;
   }
+  
+  /*navbar sevtion-------------------------------------------------------------------*/
+  .changeBg
+  {
+      background:linear-gradient(90deg ,#B6C2C4, #6E7E8A ,#9AA4AE);
+  }
+  /*------------------products section---------------------------*/
 
    /*******************comments section************************/
    #typeComment
@@ -701,9 +689,6 @@ label {
 
   
 
-
-
-
 /************ footer section********/
 footer
 {
@@ -743,20 +728,5 @@ footer ul
     list-style-type: none;
 }
 /*end footer section*/
-/*scroll up*/
-#scrollUp {
-  background: #ffbf7f;
-  bottom: 10px;
-  color: #ffffff;
-  font-size: 20px;
-  height: 40px;
-  right: 10px;
-  text-align: center;
-  transition: all 0.3s ease 0s;
-  width: 40px;
-}
-#scrollUp i {
-  line-height: 40px;
-}
 
 

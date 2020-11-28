@@ -10,18 +10,19 @@ var commentsContainer ;  //array to store comments in local
 // var getComments =[]; // array to get comments from local storage
 addReview.addEventListener("click" ,displayArea);
 
-if (localStorage.getItem("comment1") == null)
+if (localStorage.getItem("furniture") == null)
 {
-   commentsContainer1 = [];
+    furnitureContainer = [];
    typeComment.style.display = "none";
    sendComment.style.display = "none" ;
    displayEmptyParagra.style.display = "block" ;
    displayEmptyParagra.innerHTML = "there is any reviews YET!";
+   console.log("fadya")
 }
 else
 {
-   commentsContainer1 = JSON.parse(localStorage.getItem("comment1"));
-   console.log(commentsContainer1[2])
+    furnitureContainer = JSON.parse(localStorage.getItem("furniture"));
+   console.log(furnitureContainer[2])
    typeComment.style.display = "none";
    sendComment.style.display = "none" ;
    makeSureIfLSEmpty();
@@ -47,10 +48,10 @@ function takeComments()
        validateComment.innerHTML = "your review send thankyou!";
        var valueOfComment = 
        {
-           comment1 : typeComment.value
+        furniture : typeComment.value
        }
-       commentsContainer1.push(valueOfComment);
-       localStorage.setItem("comment1" ,JSON.stringify(commentsContainer1 ));
+       furnitureContainer.push(valueOfComment);
+       localStorage.setItem("furniture" ,JSON.stringify(furnitureContainer ));
        makeSureIfLSEmpty();
        clearTextArea();
 
@@ -67,13 +68,13 @@ function takeComments()
  function makeSureIfLSEmpty()
   { 
          var temp = "";
-         for (var i = 0 ; i < commentsContainer1.length ; i++)
+         for (var i = 0 ; i < furnitureContainer.length ; i++)
          {
           temp += `<div class="col-md-3">
           <img src="../imges/bbbb.jpg" class="w-100 my-2" >
            </div>
            <div  class="col-md-9">             
-           <span class="my-2 displayEmpty">`+commentsContainer1[i].comment1+`</span>
+           <span class="my-2 displayEmpty">`+furnitureContainer[i].furniture+`</span>
            </div>`;
            
          }   
@@ -84,16 +85,15 @@ function takeComments()
  };
  //            temp += `<p class="my-2">`+commentsContainer[i].comment+`</p>`
 
-
 //img shange ----------------------------------------------------------//
 var image=document.getElementById("zoom_03");
 
 
 function hover(image) {
-    image.setAttribute('src', 'imges/mobil img/6.jpg');
+    image.setAttribute('src', 'imges/Home&kitchen/cap1.jpg');
   }
   
   function unhover(image) {
-    image.setAttribute('src', 'imges/mobil img/8.jpg');
+    image.setAttribute('src', 'imges/Home&kitchen/cap2.jpg');
   }
 
