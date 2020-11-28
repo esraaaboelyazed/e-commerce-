@@ -1,24 +1,26 @@
-body{
-    font-family:  Tahoma, Geneva, sans-serif;
+body {
+    font-family: Tahoma, Geneva, sans-serif;
     color: #FFF;
     background-size: cover;
-    
-   
 }
-.signup{
-    background: rgba(44,62,88,0.7);
+
+.signup {
+    background: rgba(44, 62, 88, 0.7);
     padding: 40px;
     width: 250px;
     margin: 0 auto;
     margin-top: 90px;
-    height:430px;
-    margin-left: auto; /* 10px*/
+    height: 430px;
+    margin-left: auto;
+    /* 10px*/
 }
-form{
-   width: 240px; 
-   text-align: center;
+
+form {
+    width: 240px;
+    text-align: center;
 }
-input{
+
+input {
     width: 240px;
     text-align: center;
     background: transparent;
@@ -32,24 +34,31 @@ input{
     outline: none;
     color: #FFF;
 }
-input[type=button]{
+
+#signup-btn {
+    margin: auto;
+    margin-bottom: 5px;
+    display: block;
     border: none;
-    width: 190px;
+    width: 120px;
     background: #FFF;
     color: #000;
     font-size: 16px;
     line-height: 25px;
-    padding: 10px 0;
+    padding: 3px 2px;
     border-radius: 15px;
     cursor: pointer;
 }
-input[type=button]:hover{
+
+#signup-btn:hover {
     color: #fff;
     background-color: #000;
 }
-h2{
+
+h2 {
     color: #000;
 }
+
 ::placeholder {
     color: aliceblue;
     opacity: 1;
