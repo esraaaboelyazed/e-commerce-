@@ -9,6 +9,17 @@
     margin-bottom: 80px;
 
 }
+.mt-80{
+  margin-top: 80px;
+
+}
+/*navbar sevtion-------------------------------------------------------------------*/
+.changeBg
+{
+    background:linear-gradient(90deg ,#B6C2C4, #6E7E8A ,#9AA4AE);
+}
+
+
 .container{
     max-width: 720px;
 }
@@ -252,3 +263,42 @@ a{
     line-height: 40px;
 }
 
+ /************ footer section********/
+ footer
+ {
+     background-color: rgb(194,201,204);
+ }
+ footer span
+ {
+     color:rgb(105, 96, 34) ;
+     
+ }
+ footer p 
+ {
+     font-style: italic;
+ }
+ footer i
+ {
+     cursor: pointer;
+ }
+ footer i:hover
+ {
+     color: gold;
+ }
+ footer h5{
+     font-size: 1.5rem;
+     font-weight: 600;
+ }
+ footer li
+ {
+     cursor: pointer;
+ }
+ footer li:hover
+ {
+    color: rgb(155, 140, 46);
+ }
+ footer ul 
+ {
+     list-style-type: none;
+ }
+ /*end footer section*/
