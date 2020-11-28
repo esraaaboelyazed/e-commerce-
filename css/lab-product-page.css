@@ -628,6 +628,11 @@ label {
     line-height: 1;
     margin-bottom: 0;
   }
+  /***************** start nav section*******************/
+.changeBg
+{
+    background:linear-gradient(90deg ,#B6C2C4, #6E7E8A ,#9AA4AE);
+}
   /*******************comments section************************/
   #typeComment
   {
@@ -675,6 +680,44 @@ label {
     font-style: italic;
     color: red;
    
+}
+/************ footer section********/
+footer
+{
+    background-color: rgb(194,201,204);
+}
+footer span
+{
+    color:rgb(105, 96, 34) ;
+    
+}
+footer p 
+{
+    font-style: italic;
+}
+footer i
+{
+    cursor: pointer;
+}
+footer i:hover
+{
+    color: gold;
+}
+footer h5{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+footer li
+{
+    cursor: pointer;
+}
+footer li:hover
+{
+   color: rgb(155, 140, 46);
+}
+footer ul 
+{
+    list-style-type: none;
 }
 
   
