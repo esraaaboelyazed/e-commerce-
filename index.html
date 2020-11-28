@@ -61,9 +61,13 @@
                         <div>
                             <h1 class="mb-3 text-center">SHOPIFY.</h1>
                             <form class="form-inline my-2 my-lg-0 ml-5 ">
-                                <input class="form-control mr-sm-2 ml-5" oninput="searchProducts(this.value)" type="search" placeholder="Search for product" aria-label="Search">
+                                <input class="form-control mr-sm-2 ml-5" onkeyup="searchProducts(this.value)" type="search" placeholder="Search for product" aria-label="Search">
+                          
                                 <button id="searchProduct" class="btn  my-2 my-sm-0 btnChange" type="submit">Search</button>
                               </form>
+                              <div id="searchResults" class="searchResults ">
+                                
+                                 </div>
                         </div>
                     </div>
                     <div class="col-md-7 carsolImgs">
@@ -109,10 +113,10 @@
             </path>
         </svg>
         <!--end of header section-->
-
+        <p class="productArray"></p>
 
         <!--start navs section-->
-           <section class="container category mb-5 ">
+           <section id="categories" class="container category mb-5 ">
                <h2 class="text-center">Category</h2>
                <p class="text-center mb-3">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             <ul class="nav nav-tabs mb-5" id="myTab" role="tablist">
@@ -120,7 +124,7 @@
                   <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">All</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="books-tab" data-toggle="tab" href="#books" role="tab" aria-controls="books" aria-selected="false">Books</a>
+                  <a class="nav-link" id="books-tab"  data-toggle="tab" href="#books" role="tab" aria-controls="books" aria-selected="false">Books</a>
                 </li>
     
                 <li class="nav-item">
@@ -259,9 +263,9 @@
          
        <!--start of about us section-->
           <section id="aboutUs" class="container aboutUs my-5">
-    <h2 class="text-center mb-3 mt-5">About Us</h2>
-    <h5 class="text-center">“I went from selling to my town, to selling n
-        ationwide in one week. It’s a whole new business now.” </h5>
+                <h2 class="text-center mb-3 mt-5">About Us</h2>
+                <h5 class="text-center">“I went from selling to my town, to selling n
+                   ationwide in one week. It’s a whole new business now.” </h5>
           </section>
 
         <!--end of about section-->
