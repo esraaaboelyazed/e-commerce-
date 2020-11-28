@@ -12,12 +12,6 @@
 .container{
     max-width: 960;
 }
-/*navbar sevtion-------------------------------------------------------------------*/
-.changeBg
-{
-    background:linear-gradient(90deg ,#B6C2C4, #6E7E8A ,#9AA4AE);
-}
-
 
 .imgs-zoom-area {
     width: 100%;
@@ -25,6 +19,12 @@
   .imgs-zoom-area img {
     width: 100% !important;
   }
+  /*navbar sevtion-------------------------------------------------------------------*/
+  .changeBg
+  {
+      background:linear-gradient(90deg ,#B6C2C4, #6E7E8A ,#9AA4AE);
+  }
+  /*------------------products section---------------------------*/
 
    /*******************comments section************************/
    #typeComment
@@ -686,12 +686,7 @@ label {
     margin-bottom: 0;
   }
 
-  
-
-
-
-
-/************ footer section********/
+  /************ footer section********/
 footer
 {
     background-color: rgb(194,201,204);
@@ -730,20 +725,9 @@ footer ul
     list-style-type: none;
 }
 /*end footer section*/
-/*scroll up*/
-#scrollUp {
-  background: #ffbf7f;
-  bottom: 10px;
-  color: #ffffff;
-  font-size: 20px;
-  height: 40px;
-  right: 10px;
-  text-align: center;
-  transition: all 0.3s ease 0s;
-  width: 40px;
-}
-#scrollUp i {
-  line-height: 40px;
-}
+
+
+
+
 
 
