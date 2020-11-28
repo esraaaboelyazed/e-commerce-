@@ -17,6 +17,11 @@ logoutBtn.addEventListener("click", function(){
     });
 
 let productsDom = document.querySelector(".products")
+let cartProductMenue = document.querySelector(".carts-products ");
+let cartProductDom = document.querySelector(".carts-products div");
+let shoppingCartIcon = document.querySelector(".shoppingCart")
+let badgeDom = document.querySelector(".badge");
+
     let products = [{
         id: 1,
         title: "headphone item",
@@ -36,7 +41,7 @@ let productsDom = document.querySelector(".products")
 
 },
 ];
-
+shoppingCartIcon.addEventListener("click",openCartMenu)
 function drawProductsUI(){
     let productsUI = products.map((item)=>{
         return `
@@ -49,7 +54,7 @@ function drawProductsUI(){
         </div>
         <div class="product-item-actions">
             <button class="add-to-cart" onclick="addedToCart(${item.id})">Add to Cart</button>
-            <i class="far fa-heart"></i>
+            <i class="fas fa-heart" style="color: ${item.liked == true ? "red" : "" }" onclick = "addToFavourite(${item.id})"></i>
         </div>
         </div> 
 
@@ -59,15 +64,66 @@ function drawProductsUI(){
     productsDom.innerHTML = productsUI ;
 }
 drawProductsUI();
- function addedToCart(id){
-     let choosenItem = products.find((item) => item.id=== id );
-     console.log(choosenItem);
+let addedItem =localStorage.getItem("productsInCart")? JSON.parse(localStorage.getItem("productsInCart")):[];
+ if(addedItem){
+     addedItem.map((item) =>{
+cartProductDom.innerHTML += `<p>${item.title}</p>`;
+     });
+     badgeDom.style.display ="block";
+    badgeDom.innerHTML = addedItem.length;
+ }
+function addedToCart(id){
+    if (localStorage.getItem("username")){
+        let choosenItem = products.find((item) => item.id=== id );
+        cartProductDom.innerHTML += `<p>${choosenItem.title} </p>`;
+        addedItem = [...addedItem,choosenItem];
+        localStorage.setItem('productsInCart',JSON.stringify(addedItem))
+        let cartProductItems = document.querySelectorAll(".carts-products div p")
+        badgeDom.style.display ="block";
+        badgeDom.innerHTML = cartProductItems.length;
+       
+    }else{
+        window.location = "LogIn.html"
+    }
  }
 
- function checkLogUser(){
-     if (localStorage.getItem("username")){
-         console.log("added to cart");
-     }else{
-         window.location = "LogIn.html"
+
+
+ function openCartMenu(){
+     if (cartProductDom.innerHTML != ""){
+         if(cartProductMenue.style.display == "block"){
+             cartProductMenue.style.display ="none";
+         }else{
+             cartProductMenue.style.display="block";
+         }
+         }
      }
+ function getuniqueArr(arr,filterType){
+     let unique = arr.map((item)=> item[filterType])
+     .map((item,i ,final) => final.indexOf(item) === i && i).filter((item)=>arr[item])
+     .map((item) => arr[item]);
+     return unique
+
+
  }
+  let favoritesItem = localStorage.getItem("productsFavorite")
+  ? JSON.parse(localStorage.getItem(productsFavorite)):[];
+  
+  function addToFavourite(id){
+      if (localStorage.getItem("username")){
+          let choosenItem = products.find((item)=> item.id === id);
+          choosenItem.liked = true;
+          favoritesItem =[...favoritesItem,choosenItem];
+          let uniqueproducts = getuniqueArr(favoritesItem,"id")
+          localStorage.setItem("productsfavorite",JSON.stringify(uniqueproducts));
+          products.map((item)=>{
+              if(item.id === choosenItem.id){
+                  item.liked=true;
+              }
+          });
+          localStorage.setItem("products",JSON.stringify(products));
+          drawProductsUI(products);}else{
+              window.location = "../../LogIn.html"
+          }
+      }
+  
