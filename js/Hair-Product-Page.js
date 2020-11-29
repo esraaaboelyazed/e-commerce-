@@ -48,7 +48,7 @@ function takeComments()
        validateComment.innerHTML = "your review send thankyou!";
        var valueOfComment = 
        {
-           makeup : typeComment.value
+        hair : typeComment.value
        }
        haircontainer.push(valueOfComment);
        localStorage.setItem("hair" ,JSON.stringify(haircontainer ));
@@ -84,6 +84,15 @@ function takeComments()
       
  };
  //            temp += `<p class="my-2">`+commentsContainer[i].comment+`</p>`
+//image chande------------------------//
+ var image=document.getElementById("zoom_03");
 
 
+ function hover(image) {
+     image.setAttribute('src', 'imges/Hair Care img/best1.PNG');
+   }
+   
+   function unhover(image) {
+     image.setAttribute('src', 'imges/Hair Care img/best3.PNG');
+   }
 

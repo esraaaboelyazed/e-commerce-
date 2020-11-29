@@ -48,7 +48,7 @@ function takeComments()
        validateComment.innerHTML = "your review send thankyou!";
        var valueOfComment = 
        {
-           makeup : typeComment.value
+        body : typeComment.value
        }
        bodycontainer.push(valueOfComment);
        localStorage.setItem("body" ,JSON.stringify(bodycontainer ));
@@ -87,3 +87,14 @@ function takeComments()
 
 
 
+//img shange ----------------------------------------------------------//
+var image=document.getElementById("zoom_03");
+
+
+function hover(image) {
+    image.setAttribute('src', 'imges/Body Care img/olaypr2.PNG');
+  }
+  
+  function unhover(image) {
+    image.setAttribute('src', 'imges/Body Care img/best3.PNG');
+  }

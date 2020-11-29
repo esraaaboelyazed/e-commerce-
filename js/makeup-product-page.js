@@ -48,7 +48,7 @@ function takeComments()
        validateComment.innerHTML = "your review send thankyou!";
        var valueOfComment = 
        {
-           makeup : typeComment.value
+        makeup : typeComment.value
        }
        makeupcontainer.push(valueOfComment);
        localStorage.setItem("makeup" ,JSON.stringify(makeupcontainer ));
@@ -87,3 +87,15 @@ function takeComments()
 
 
 
+
+//img shange ----------------------------------------------------------//
+var image=document.getElementById("zoom_03");
+
+
+function hover(image) {
+    image.setAttribute('src', 'imges/MakeUp img/macpr2.PNG');
+  }
+  
+  function unhover(image) {
+    image.setAttribute('src', 'imges/MakeUp img/best3.PNG');
+  }

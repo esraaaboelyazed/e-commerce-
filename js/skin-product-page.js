@@ -48,7 +48,7 @@ function takeComments()
        validateComment.innerHTML = "your review send thankyou!";
        var valueOfComment = 
        {
-           makeup : typeComment.value
+        skin : typeComment.value
        }
        skincontainer.push(valueOfComment);
        localStorage.setItem("skin" ,JSON.stringify(skincontainer ));
@@ -87,3 +87,15 @@ function takeComments()
 
 
 
+
+//img shange ----------------------------------------------------------//
+var image=document.getElementById("zoom_03");
+
+
+function hover(image) {
+    image.setAttribute('src', 'imges/Skin Care img/best3.PNG');
+  }
+  
+  function unhover(image) {
+    image.setAttribute('src', 'imges/Skin Care img/best4.PNG');
+  }
