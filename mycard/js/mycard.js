@@ -34,6 +34,8 @@ function drawCartProductsUI(allproducts =[]){
             <h2${item.title}</h2>
             <p>Lorem ipsum </p>
             <span>size: ${item.size}</span>
+            <br>
+            <span>Quantity: ${item.qty}</span>
         </div>
         <div class="product-item-actions">
             <button class="add-to-cart" onclick="removeItemFromCart(${item.id})">remove from card</button>

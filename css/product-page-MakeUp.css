@@ -19,6 +19,20 @@
   .imgs-zoom-area img {
     width: 100% !important;
   }
+  /***************** start nav section*******************/
+.changeBg
+{
+    background:linear-gradient(90deg ,#B6C2C4, #6E7E8A ,#9AA4AE);
+}
+#editLogo
+{
+  width: 60px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
 
    /*******************comments section************************/
    #typeComment

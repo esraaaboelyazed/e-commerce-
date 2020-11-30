@@ -2,6 +2,23 @@
     margin: 0;
     padding: 0;
 }
+
+/***************** start nav section*******************/
+.changeBg
+{
+    background:linear-gradient(90deg ,#B6C2C4, #6E7E8A ,#9AA4AE);
+}
+/*************** edit logo***********************/
+#editLogo
+{
+  width: 60px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
 .plr-185{
     padding: o 30px;
 }
@@ -207,7 +224,12 @@ li {
 .mb-50{
       margin-bottom: 50px;
   }
-
+.products{
+  display: flex;
+}
+.products1{
+  display: flex;
+}
 .pro-tap-menu {
     margin: 25px 0 30px;
     display: flex;
@@ -289,4 +311,60 @@ footer li:hover
 footer ul 
 {
     list-style-type: none;
+}
+
+
+
+
+nav ul#user_info{
+    display:flex;
+    align-items: center;
+}
+nav ul#user_info li{position: relative;}
+nav ul#user_info li i{
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+nav ul#user_info .carts-products{
+    position: absolute;
+    z-index: 99;
+    width: 200px;
+    background: #eaeaea;
+    top:46px;
+    padding: 10px;
+    border: 1px solid pink;
+    display: none;
+}
+nav ul#user_info .carts-products a{
+    background: pink;
+    display: block;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    padding: 6px;
+    text-decoration: none;
+}
+nav ul#user_info li .badge{
+    width: 20px;
+    height: 20px;
+    background: crimson;
+    color: #fff;
+    text-align:center;
+    display: block;
+    position:absolute;
+    border-radius: 50%;
+    top:-9px;
+    right:-11px;
+    font-size: 15px;
+    line-height: 20px;
+    display: none;
+}
+nav li a{
+    display: block;
+    color: #fff;
+    min-width: 50px;
+    margin: 0 5px;
+    padding: 5px;
 }

@@ -17,7 +17,6 @@ if (localStorage.getItem("comment1") == null)
    sendComment.style.display = "none" ;
    displayEmptyParagra.style.display = "block" ;
    displayEmptyParagra.innerHTML = "there is any reviews YET!";
-   console.log("fadya")
 }
 else
 {
@@ -86,4 +85,15 @@ function takeComments()
  //            temp += `<p class="my-2">`+commentsContainer[i].comment+`</p>`
 
 
+//img shange ----------------------------------------------------------//
+var image=document.getElementById("zoom_03");
+
+
+function hover(image) {
+    image.setAttribute('src', 'imges/mobil img/6.jpg');
+  }
+  
+  function unhover(image) {
+    image.setAttribute('src', 'imges/mobil img/8.jpg');
+  }
 

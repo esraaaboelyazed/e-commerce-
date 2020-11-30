@@ -12,6 +12,25 @@
 .container{
     max-width: 960;
 }
+.mt-100{
+    margin-top: 100px;
+  }
+  /*logo-----------------*/
+  #editLogo
+  {
+  width: 60px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  }
+/*navbar sevtion-------------------------------------------------------------------*/
+.changeBg
+{
+    background:linear-gradient(90deg ,#B6C2C4, #6E7E8A ,#9AA4AE);
+}
+
 
 .imgs-zoom-area {
     width: 100%;
@@ -682,5 +701,62 @@ label {
 
   
 
+
+
+
+/************ footer section********/
+footer
+{
+    background-color: rgb(194,201,204);
+}
+footer span
+{
+    color:rgb(105, 96, 34) ;
+    
+}
+footer p 
+{
+    font-style: italic;
+}
+footer i
+{
+    cursor: pointer;
+}
+footer i:hover
+{
+    color: gold;
+}
+footer h5{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+footer li
+{
+    cursor: pointer;
+}
+footer li:hover
+{
+   color: rgb(155, 140, 46);
+}
+footer ul 
+{
+    list-style-type: none;
+}
+/*end footer section*/
+/*scroll up*/
+#scrollUp {
+  background: #ffbf7f;
+  bottom: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  height: 40px;
+  right: 10px;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  width: 40px;
+}
+#scrollUp i {
+  line-height: 40px;
+}
 
 
