@@ -27,17 +27,20 @@ let badgeDom = document.querySelector(".badge");
         title: "headphone item",
         size:"large",
         imageUrl: "../images/57893.jpg",
+        qty:1,
     },
    { id: 2,
     title: "headphone item",
     size:"large",
     imageUrl: "../images/57893.jpg",
+    qty:1,
 
 },
 {  id: 3,
     title: "headphone item",
     size:"large",
     imageUrl: "../images/57893.jpg",
+    qty:1
 
 },
 ];
@@ -67,17 +70,31 @@ drawProductsUI();
 let addedItem =localStorage.getItem("productsInCart")? JSON.parse(localStorage.getItem("productsInCart")):[];
  if(addedItem){
      addedItem.map((item) =>{
-cartProductDom.innerHTML += `<p>${item.title}</p>`;
+cartProductDom.innerHTML += `<p>${item.title} ${item.qty}</p>`;
      });
      badgeDom.style.display ="block";
     badgeDom.innerHTML = addedItem.length;
  }
+ let allItems=[];
 function addedToCart(id){
     if (localStorage.getItem("username")){
+
         let choosenItem = products.find((item) => item.id=== id );
-        cartProductDom.innerHTML += `<p>${choosenItem.title} </p>`;
+        let item = allItems.find((i) => i.id === choosenItem.id);
+        if (item){
+            choosenItem.qty += 1;
+        }else{
+            allItems.push(choosenItem)
+        }
+        cartProductDom.innerHTML="";
+        allItems.forEach((item)=>{
+            cartProductDom.innerHTML += `<p>${item.title} ${item.qty}</p>`
+
+        });
+        // cartProductDom.innerHTML += `<p>${choosenItem.title} </p>`;
         addedItem = [...addedItem,choosenItem];
-        localStorage.setItem('productsInCart',JSON.stringify(addedItem))
+        let uniqueProducts = getuniqueArr(addedItem,id)
+        localStorage.setItem('productsInCart',JSON.stringify(uniqueProducts))
         let cartProductItems = document.querySelectorAll(".carts-products div p")
         badgeDom.style.display ="block";
         badgeDom.innerHTML = cartProductItems.length;
@@ -99,10 +116,12 @@ function addedToCart(id){
          }
      }
  function getuniqueArr(arr,filterType){
-     let unique = arr.map((item)=> item[filterType])
-     .map((item,i ,final) => final.indexOf(item) === i && i).filter((item)=>arr[item])
+     let unique = arr
+     .map((item)=> item[filterType])
+     .map((item,i ,final) => final.indexOf(item) === i && i)
+     .filter((item)=>arr[item])
      .map((item) => arr[item]);
-     return unique
+     return unique;
 
 
  }
