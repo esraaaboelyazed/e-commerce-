@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var productsContainer = [
     "samsong laptop",
     "lg laptop",
@@ -19,34 +18,9 @@ var productsContainer = [
     "jac tv",
     "sharp laptop",
     "toshiba laptop",
-=======
-
-var productsContainer = 
-[
-      "samsong laptop" , 
-      "lg laptop" ,
-      "tornado laptop" ,
-      "sharp tv" ,
-      "toshiba tv" , 
-      "tornado tv " ,
-      "sony mobile" ,
-      "iphone 7plus",
-      "iphone 11",
-      "iphone mini",
-      "iphone 8",
-      "samsong a7",
-      "samsong a7",
-      "samsong a7",
-      "samsong a7",
-      "unionair tv" , 
-      "jac tv" ,
-      "sharp laptop" ,
-      "toshiba laptop" , 
->>>>>>> 218a24192b094db7770572fe49e89533b0cee31a
 
 ]
 
-<<<<<<< HEAD
 function searchProducts(query) {
     var temp = ``;
     var newSearchResult = ``;
@@ -59,11 +33,10 @@ function searchProducts(query) {
     }
     document.getElementById("searchResults").innerHTML = temp;
 };
-=======
-             }
-       }
+            
+       
        document.getElementById("searchResults").innerHTML = temp;
- };
+ 
 
 
 
@@ -249,4 +222,3 @@ function searchProducts(query) {
                window.location = "LogIn.html"
            }
        }
->>>>>>> 218a24192b094db7770572fe49e89533b0cee31a
