@@ -1,36 +1,35 @@
 let productsDom = document.querySelector(".products")
- 
 let cartProductMenue = document.querySelector(".carts-products ");
 let cartProductDom = document.querySelector(".carts-products div");
 let shoppingCartIcon = document.querySelector(".shoppingCart")
 let badgeDom = document.querySelector(".badge");
 
     let products = [{
-        id: 1,
-        title: "Kitchen Machine Food Mixer",
-        price:" $ 22.00",
-        imageUrl: "imges/Home&kitchen/panas1.jpg",
+        id: 221,
+        title: "Balea BodyFIT Cream",
+        price:" $ 122.00",
+        imageUrl: "imges/Body Care img/baleapr1.jpg",
         qty:1,
     },
-   { id: 2,
-    title: "Iron",
-    price:"$ 46.00",
-    imageUrl: "imges/Home&kitchen/panas2.jpg",
+   { id: 222,
+    title: "Soap Bar",
+    price:"$ 146.00",
+    imageUrl: "imges/Body Care img/baleapr2.jpg",
     qty:1,
 
 },
-{    id: 3,
-    title: "Microwave Oven",
-    price:"$36.00",
-    imageUrl: "imges/Home&kitchen/panas3.jpg",
+{  id: 223,
+    title: "Balea BodyFIT Serum",
+    price:"$136.00",
+    imageUrl: "imges/Body Care img/balapr3.jpg",
     qty:1
 
 },
 {
-     id: 4,
-     title: "Electric Kittle",
-     price:"$17.00",
-     imageUrl: "imges/Home&kitchen/panas4.jpg",
+     id: 224,
+     title: "Balea Lemon Cream",
+     price:"$117.00",
+     imageUrl: "imges/Body Care img/baleapr4.jpg",
      qty:1
 },
 
@@ -49,53 +48,52 @@ function drawProductsUI(){
         <div class="card-body product-info">
           <h5 class="card-title">${item.title}</h5>
           <div class="pro-rating">
-             <a href="#" tabindex="0">
-                 <i class="zmdi zmdi-star"></i>
-             </a>
-             <a href="#" tabindex="0">
-              <i class="zmdi zmdi-star"></i>
-          </a>
-          <a href="#" tabindex="0">
-              <i class="zmdi zmdi-star"></i>
-          </a>
-          <a href="#" tabindex="0">
-              <i class="zmdi zmdi-star"></i>
-          </a>
-          <a href="#" tabindex="0">
-              <i class="zmdi zmdi-star"></i>
-          </a>
-         </div>
-         <h3 class="pro-price">${item.price}</h3>
-         <ul class="action-button">
-           <li>
-               <a href="#" title="wishlist" tabindex="0">
-                   <i class="zmdi zmdi-favorite"  style="color: ${item.liked == true ? "red" : "" }" onclick = "addToFavourite(${item.id})"></i>
+              <a href="#" tabindex="0">
+                  <i class="zmdi zmdi-star"></i>
+              </a>
+              <a href="#" tabindex="0">
+               <i class="zmdi zmdi-star"></i>
+           </a>
+           <a href="#" tabindex="0">
+               <i class="zmdi zmdi-star"></i>
+           </a>
+           <a href="#" tabindex="0">
+               <i class="zmdi zmdi-star"></i>
+           </a>
+           <a href="#" tabindex="0">
+               <i class="zmdi zmdi-star"></i>
+           </a>
+          </div>
+          <h3 class="pro-price">$ 7.99</h3>
+          <ul class="action-button">
+            <li>
+                <a href="#" title="wishlist" tabindex="0">
+                    <i class="zmdi zmdi-favorite"  style="color: ${item.liked == true ? "red" : "" }" onclick = "addToFavourite(${item.id})"></i>
+                </a>
+            </li>
+            <li>
+               <a href="#" data-toggle="modal" data-target="#productModal" title="Quickview" tabindex="0">
+                   <i class="zmdi zmdi-zoom-in"></i>
                </a>
            </li>
            <li>
-              <a href="#" data-toggle="modal" data-target="#productModal" title="Quickview" tabindex="0">
-                  <i class="zmdi zmdi-zoom-in"></i>
-              </a>
-          </li>
-          <li>
-              <a href="#" title="compare" tabindex="0">
-                  <i class="zmdi zmdi-refresh"></i>
-              </a>
-          </li>
-          <li>
-              <a href="#" title="add to cart" tabindex="0">
-                  <i class="zmdi zmdi-shopping-cart-plus" onclick="addedToCart(${item.id})"></i>
-              </a>
-          </li>
+               <a href="#" title="compare" tabindex="0">
+                   <i class="zmdi zmdi-refresh"></i>
+               </a>
+           </li>
+           <li>
+               <a href="#" title="add to cart" tabindex="0">
+                   <i class="zmdi zmdi-shopping-cart-plus" onclick="addedToCart(${item.id})"></i>
+               </a>
+           </li>
 
-       </ul>
+        </ul>
         </div>
         <div class="card-footer">
-          <a href="APPLINANCES-products-page.html" class="card-link">See More ...</a>
-          
-        </div>
-      </div> 
-
+           <a href="Body-Product-Page.html" class="card-link">See More ...</a>
+           
+         </div>
+      </div>
         `;
 
     });

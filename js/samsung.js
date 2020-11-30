@@ -1,41 +1,4 @@
-var productsContainer = [
-    "samsong laptop",
-    "lg laptop",
-    "tornado laptop",
-    "sharp tv",
-    "toshiba tv",
-    "tornado tv ",
-    "sony mobile",
-    "iphone 7plus",
-    "iphone 11",
-    "iphone mini",
-    "iphone 8",
-    "samsong a7",
-    "samsong a7",
-    "samsong a7",
-    "samsong a7",
-    "unionair tv",
-    "jac tv",
-    "sharp laptop",
-    "toshiba laptop",
-
-]
-
-function searchProducts(query) {
-    var temp = ``;
-    var newSearchResult = ``;
-    for (var i = 0; i < productsContainer.length; i++) {
-        if (productsContainer[i].includes(query.trim()) == true) {
-            newSearchResult = productsContainer[i].replace(query, `<span style="color:orange">` + query + `</span>`)
-            temp += `<a class="d-block px-3 py-1" href="#categories">` + newSearchResult + `</a>`;
-
-        }
-    }
-    document.getElementById("searchResults").innerHTML = temp;
-};
-            
-
- let productsDom = document.querySelector(".products")
+let productsDom = document.querySelector(".products")
  
  let cartProductMenue = document.querySelector(".carts-products ");
  let cartProductDom = document.querySelector(".carts-products div");
@@ -44,30 +7,30 @@ function searchProducts(query) {
  
      let products = [{
          id: 1,
-         title: "Mini Afterglow Lip",
-         price:" $ 22.00",
-         imageUrl: "imges/MakeUp img/best1.jpg",
+         title: "Galaxy M11 Dual SIM Metallic Blue 3GB RAM 32GB 4G LTE",
+         price:" 2099.00",
+         imageUrl: "imges/mobil img/samsung2.jpg",
          qty:1,
      },
     { id: 2,
-     title: "Finish Foundation",
-     price:"$ 46.00",
-     imageUrl: "imges/MakeUp img/best2.jpg",
+     title: "Galaxy S20 Plus Dual SIM Cosmic Gray 8GB RAM 128GB 4G LTE - International Version",
+     price:"10,555",
+     imageUrl: "imges/mobil img/samsung3.jpg",
      qty:1,
  
  },
  {  id: 3,
-     title: "Poudre Compacte HD",
-     price:"$36.00",
-     imageUrl: "imges/MakeUp img/best3.png",
+     title: "Galaxy A51 Dual SIM Prism Crush Pink 6GB RAM 128GB 4G LTE",
+     price:"9,900",
+     imageUrl: "imges/mobil img/samsung4.jpg",
      qty:1
  
  },
  {
       id: 4,
-      title: "MAC Liquid Lipstick",
-      price:"$17.00",
-      imageUrl: "imges/MakeUp img/best4.jpg",
+      title: "Galaxy Note20 Ultra Dual SIM Mystic Bronze 8GB RAM 256GB 4G LTE",
+      price:"19,099",
+      imageUrl: "imges/mobil img/samsung5.jpg",
       qty:1
  },
 
@@ -82,7 +45,7 @@ function searchProducts(query) {
      let productsUI = products.map((item)=>{
          return ` 
          <div class="card">
-         <img src="${item.imageUrl}"   alt="image"/>
+         <img src="${item.imageUrl}" class="card-img-top" alt="...">
          <div class="card-body product-info">
            <h5 class="card-title">${item.title}</h5>
            <div class="pro-rating">
@@ -106,7 +69,7 @@ function searchProducts(query) {
           <ul class="action-button">
             <li>
                 <a href="#" title="wishlist" tabindex="0">
-                    <i class="zmdi zmdi-favorite"   style="color: ${item.liked == true ? "red" : "" }" onclick = "addToFavourite(${item.id})"></i>
+                    <i class="zmdi zmdi-favorite"  style="color: ${item.liked == true ? "red" : "" }" onclick = "addToFavourite(${item.id})"></i>
                 </a>
             </li>
             <li>
@@ -121,16 +84,17 @@ function searchProducts(query) {
            </li>
            <li>
                <a href="#" title="add to cart" tabindex="0">
-                   <i class="zmdi zmdi-shopping-cart-plus" onclick="addedToCart(${item.id})" ></i>
+                   <i class="zmdi zmdi-shopping-cart-plus"  onclick="addedToCart(${item.id})"></i>
                </a>
            </li>
 
         </ul>
          </div>
          <div class="card-footer">
-          <a href="product-page-makeup.html" class="card-link">See More ...</a>
-        </div> 
-        </div>
+           <a href="product-page-mobile.html" class="card-link">See More ...</a>
+           
+         </div>
+       </div>
          `;
  
      });
