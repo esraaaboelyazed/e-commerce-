@@ -16,6 +16,7 @@ document.getElementById('loginbtn').addEventListener('click', (e) => { //login b
                 if (user.email == email && user.password == password) { // loop on all users and also check if email and pass at the same user
                     usernotEist = false;
                     helper = 1;
+                    localStorage.setItem("current user", JSON.stringify(email));
                     window.location.href = "index.html";
                     return false;
                 } else {
