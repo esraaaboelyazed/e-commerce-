@@ -195,3 +195,58 @@ footer ul
 #scrollUp i {
   line-height: 40px;
 }
+.products{
+  display: flex;
+}
+nav ul#user_info{
+  display:flex;
+  align-items: center;
+}
+nav ul#user_info li{position: relative;}
+nav ul#user_info li i{
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+}
+nav ul#user_info .carts-products{
+  position: absolute;
+  z-index: 99;
+  width: 200px;
+  background: #eaeaea;
+  top:46px;
+  padding: 10px;
+  border: 1px solid pink;
+  display: none;
+}
+nav ul#user_info .carts-products a{
+  background: pink;
+  display: block;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  padding: 6px;
+  text-decoration: none;
+}
+nav ul#user_info li .badge{
+  width: 20px;
+  height: 20px;
+  background: crimson;
+  color: #fff;
+  text-align:center;
+  display: block;
+  position:absolute;
+  border-radius: 50%;
+  top:-9px;
+  right:-11px;
+  font-size: 15px;
+  line-height: 20px;
+  display: none;
+}
+nav li a{
+  display: block;
+  color: #fff;
+  min-width: 50px;
+  margin: 0 5px;
+  padding: 5px;
+}

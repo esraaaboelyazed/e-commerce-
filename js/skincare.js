@@ -1,47 +1,4 @@
-var productsContainer = [
-    "samsong laptop",
-    "lg laptop",
-    "tornado laptop",
-    "sharp tv",
-    "toshiba tv",
-    "tornado tv ",
-    "sony mobile",
-    "iphone 7plus",
-    "iphone 11",
-    "iphone mini",
-    "iphone 8",
-    "samsong a7",
-    "samsong a7",
-    "samsong a7",
-    "samsong a7",
-    "unionair tv",
-    "jac tv",
-    "sharp laptop",
-    "toshiba laptop",
-
-]
-
-function searchProducts(query) {
-    var temp = ``;
-    var newSearchResult = ``;
-    for (var i = 0; i < productsContainer.length; i++) {
-        if (productsContainer[i].includes(query.trim()) == true) {
-            newSearchResult = productsContainer[i].replace(query, `<span style="color:orange">` + query + `</span>`)
-            temp += `<a class="d-block px-3 py-1" href="#categories">` + newSearchResult + `</a>`;
-
-        }
-    }
-    document.getElementById("searchResults").innerHTML = temp;
-};
-            
-       
-       document.getElementById("searchResults").innerHTML = temp;
- 
-
-
-
-
- let productsDom = document.querySelector(".products")
+let productsDom = document.querySelector(".products")
  
  let cartProductMenue = document.querySelector(".carts-products ");
  let cartProductDom = document.querySelector(".carts-products div");
@@ -49,31 +6,31 @@ function searchProducts(query) {
  let badgeDom = document.querySelector(".badge");
  
      let products = [{
-         id: 1,
-         title: "Mini Afterglow Lip",
-         price:" $ 22.00",
-         imageUrl: "imges/MakeUp img/best1.jpg",
+         id: 40,
+         title: "Beesline Foam",
+         price:" $ 36.00",
+         imageUrl: "imges/Skin Care img/best1.jpg",
          qty:1,
      },
-    { id: 2,
-     title: "Finish Foundation",
-     price:"$ 46.00",
-     imageUrl: "imges/MakeUp img/best2.jpg",
+    { id: 41,
+     title: "Balea Ampoules",
+     price:"$ 40.00",
+     imageUrl: "imges/Skin Care img/best2.jpg",
      qty:1,
  
  },
- {  id: 3,
-     title: "Poudre Compacte HD",
-     price:"$36.00",
-     imageUrl: "imges/MakeUp img/best3.png",
+ {  id: 42,
+     title: "Effaclar Foaming Gel",
+     price:"$30.00",
+     imageUrl: "imges/Skin Care img/best3.png",
      qty:1
  
  },
  {
-      id: 4,
-      title: "MAC Liquid Lipstick",
-      price:"$17.00",
-      imageUrl: "imges/MakeUp img/best4.jpg",
+      id: 43,
+      title: "Moisturizing + HA",
+      price:"$20.00",
+      imageUrl: "imges/Skin Care img/best4.PNG",
       qty:1
  },
 

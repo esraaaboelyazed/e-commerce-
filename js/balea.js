@@ -1,79 +1,35 @@
-var productsContainer = [
-    "samsong laptop",
-    "lg laptop",
-    "tornado laptop",
-    "sharp tv",
-    "toshiba tv",
-    "tornado tv ",
-    "sony mobile",
-    "iphone 7plus",
-    "iphone 11",
-    "iphone mini",
-    "iphone 8",
-    "samsong a7",
-    "samsong a7",
-    "samsong a7",
-    "samsong a7",
-    "unionair tv",
-    "jac tv",
-    "sharp laptop",
-    "toshiba laptop",
-
-]
-
-function searchProducts(query) {
-    var temp = ``;
-    var newSearchResult = ``;
-    for (var i = 0; i < productsContainer.length; i++) {
-        if (productsContainer[i].includes(query.trim()) == true) {
-            newSearchResult = productsContainer[i].replace(query, `<span style="color:orange">` + query + `</span>`)
-            temp += `<a class="d-block px-3 py-1" href="#categories">` + newSearchResult + `</a>`;
-
-        }
-    }
-    document.getElementById("searchResults").innerHTML = temp;
-};
-            
-       
-       document.getElementById("searchResults").innerHTML = temp;
- 
-
-
-
-
- let productsDom = document.querySelector(".products")
- 
+let productsDom = document.querySelector(".products")
  let cartProductMenue = document.querySelector(".carts-products ");
  let cartProductDom = document.querySelector(".carts-products div");
  let shoppingCartIcon = document.querySelector(".shoppingCart")
  let badgeDom = document.querySelector(".badge");
  
      let products = [{
-         id: 1,
-         title: "Mini Afterglow Lip",
+         id: 21,
+         title: "Naviea Men Cream ",
          price:" $ 22.00",
-         imageUrl: "imges/MakeUp img/best1.jpg",
+         imageUrl: "imges/Hair Care img/baleapr1.PNG",
          qty:1,
      },
-    { id: 2,
-     title: "Finish Foundation",
+    { id: 22,
+     title: "Merz Hair Skin Nails",
      price:"$ 46.00",
-     imageUrl: "imges/MakeUp img/best2.jpg",
+     imageUrl: "imges/Hair Care img/baleapr2.PNG",
      qty:1,
  
  },
- {  id: 3,
-     title: "Poudre Compacte HD",
+ {  id: 23,
+     title: "Sebamed Scalp Shampoo",
      price:"$36.00",
-     imageUrl: "imges/MakeUp img/best3.png",
+     imageUrl: "imges/Hair Care img/baleapr3.PNG",
      qty:1
  
  },
  {
-      id: 4,
-      title: "MAC Liquid Lipstick",
+      id: 24,
+      title: "Balea Hair Oil",
       price:"$17.00",
-      imageUrl: "imges/MakeUp img/best4.jpg",
+      imageUrl: "imges/Hair Care img/baleapr4.PNG",
       qty:1
  },
 
@@ -88,7 +44,7 @@ function searchProducts(query) {
      let productsUI = products.map((item)=>{
          return ` 
          <div class="card">
-         <img src="${item.imageUrl}"   alt="image"/>
+         <img src="${item.imageUrl}"  alt="image"/>
          <div class="card-body product-info">
            <h5 class="card-title">${item.title}</h5>
            <div class="pro-rating">
