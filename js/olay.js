@@ -6,32 +6,32 @@ let shoppingCartIcon = document.querySelector(".shoppingCart")
 let badgeDom = document.querySelector(".badge");
 
     let products = [{
-        id: 1,
-        title: "Kitchen Machine Food Mixer",
-        price:" $ 22.00",
-        imageUrl: "imges/Home&kitchen/panas1.jpg",
+        id: 111,
+        title: "Detoxifying Body Mask",
+        price:" $ 222.00",
+        imageUrl: "imges/Body Care img/olaypr1.PNG",
         qty:1,
     },
-   { id: 2,
-    title: "Iron",
-    price:"$ 46.00",
-    imageUrl: "imges/Home&kitchen/panas2.jpg",
+   { id: 112,
+    title: "Pitaya & Cranberry Seed",
+    price:"$ 146.00",
+    imageUrl: "imges/Body Care img/olaypr2.PNG",
     qty:1,
 
 },
-{    id: 3,
-    title: "Microwave Oven",
-    price:"$36.00",
-    imageUrl: "imges/Home&kitchen/panas3.jpg",
-    qty:1
+{  id: 113,
+    title: "Body Wash",
+    price:"$361.00",
+    imageUrl: "imges/Body Care img/olaypr3.PNG",
+    qty:1,
 
 },
 {
-     id: 4,
-     title: "Electric Kittle",
-     price:"$17.00",
-     imageUrl: "imges/Home&kitchen/panas4.jpg",
-     qty:1
+     id: 114,
+     title: "Body Wash Shea",
+     price:"$178.00",
+     imageUrl: "imges/Body Care img/olaypr4.PNG",
+     qty:1,
 },
 
 ];
@@ -45,7 +45,7 @@ function drawProductsUI(){
     let productsUI = products.map((item)=>{
         return ` 
         <div class="card">
-        <img src="${item.imageUrl}" class="card-img-top" alt="...">
+        <img src="${item.imageUrl}"  alt="image"/>
         <div class="card-body product-info">
           <h5 class="card-title">${item.title}</h5>
           <div class="pro-rating">
@@ -69,7 +69,7 @@ function drawProductsUI(){
          <ul class="action-button">
            <li>
                <a href="#" title="wishlist" tabindex="0">
-                   <i class="zmdi zmdi-favorite"  style="color: ${item.liked == true ? "red" : "" }" onclick = "addToFavourite(${item.id})"></i>
+                   <i class="zmdi zmdi-favorite"   style="color: ${item.liked == true ? "red" : "" }" onclick = "addToFavourite(${item.id})"></i>
                </a>
            </li>
            <li>
@@ -84,18 +84,16 @@ function drawProductsUI(){
           </li>
           <li>
               <a href="#" title="add to cart" tabindex="0">
-                  <i class="zmdi zmdi-shopping-cart-plus" onclick="addedToCart(${item.id})"></i>
+                  <i class="zmdi zmdi-shopping-cart-plus" onclick="addedToCart(${item.id})" ></i>
               </a>
           </li>
 
        </ul>
         </div>
         <div class="card-footer">
-          <a href="APPLINANCES-products-page.html" class="card-link">See More ...</a>
-          
-        </div>
-      </div> 
-
+         <a href="product-page-makeup.html" class="card-link">See More ...</a>
+       </div> 
+       </div>
         `;
 
     });

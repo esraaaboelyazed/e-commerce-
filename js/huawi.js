@@ -1,41 +1,4 @@
-var productsContainer = [
-    "samsong laptop",
-    "lg laptop",
-    "tornado laptop",
-    "sharp tv",
-    "toshiba tv",
-    "tornado tv ",
-    "sony mobile",
-    "iphone 7plus",
-    "iphone 11",
-    "iphone mini",
-    "iphone 8",
-    "samsong a7",
-    "samsong a7",
-    "samsong a7",
-    "samsong a7",
-    "unionair tv",
-    "jac tv",
-    "sharp laptop",
-    "toshiba laptop",
-
-]
-
-function searchProducts(query) {
-    var temp = ``;
-    var newSearchResult = ``;
-    for (var i = 0; i < productsContainer.length; i++) {
-        if (productsContainer[i].includes(query.trim()) == true) {
-            newSearchResult = productsContainer[i].replace(query, `<span style="color:orange">` + query + `</span>`)
-            temp += `<a class="d-block px-3 py-1" href="#categories">` + newSearchResult + `</a>`;
-
-        }
-    }
-    document.getElementById("searchResults").innerHTML = temp;
-};
-            
-
- let productsDom = document.querySelector(".products")
+let productsDom = document.querySelector(".products")
  
  let cartProductMenue = document.querySelector(".carts-products ");
  let cartProductDom = document.querySelector(".carts-products div");
@@ -43,31 +6,31 @@ function searchProducts(query) {
  let badgeDom = document.querySelector(".badge");
  
      let products = [{
-         id: 1,
-         title: "Mini Afterglow Lip",
+         id: 300,
+         title: "Y5P Dual SIM Mint Green 2GB RAM 32GB 4G LTE",
          price:" $ 22.00",
-         imageUrl: "imges/MakeUp img/best1.jpg",
+         imageUrl: "imges/mobil img/huawei1.jpg",
          qty:1,
      },
-    { id: 2,
-     title: "Finish Foundation",
+    { id: 301,
+     title: "Nova 7I Dual SIM Midnight Black 8GB RAM 128GB 4G LTE",
      price:"$ 46.00",
-     imageUrl: "imges/MakeUp img/best2.jpg",
+     imageUrl: "imges/mobil img/huawei2.jpg",
      qty:1,
  
  },
- {  id: 3,
-     title: "Poudre Compacte HD",
+ {  id: 303,
+     title: "Y6P Dual SIM Midnight Black 3GB RAM 64GB 4G LTE",
      price:"$36.00",
-     imageUrl: "imges/MakeUp img/best3.png",
+     imageUrl: "imges/mobil img/huawei3.jpg",
      qty:1
  
  },
  {
-      id: 4,
-      title: "MAC Liquid Lipstick",
+      id: 304,
+      title: "Nova 7i Dual SIM Crush Green 8GB RAM 128GB 4G LTE",
       price:"$17.00",
-      imageUrl: "imges/MakeUp img/best4.jpg",
+      imageUrl: "imges/mobil img/huawei4.jpg",
       qty:1
  },
 
@@ -82,7 +45,7 @@ function searchProducts(query) {
      let productsUI = products.map((item)=>{
          return ` 
          <div class="card">
-         <img src="${item.imageUrl}"   alt="image"/>
+         <img src="${item.imageUrl}" class="card-img-top" alt="...">
          <div class="card-body product-info">
            <h5 class="card-title">${item.title}</h5>
            <div class="pro-rating">
@@ -106,7 +69,7 @@ function searchProducts(query) {
           <ul class="action-button">
             <li>
                 <a href="#" title="wishlist" tabindex="0">
-                    <i class="zmdi zmdi-favorite"   style="color: ${item.liked == true ? "red" : "" }" onclick = "addToFavourite(${item.id})"></i>
+                    <i class="zmdi zmdi-favorite" style="color: ${item.liked == true ? "red" : "" }" onclick = "addToFavourite(${item.id})"></i>
                 </a>
             </li>
             <li>
@@ -121,16 +84,17 @@ function searchProducts(query) {
            </li>
            <li>
                <a href="#" title="add to cart" tabindex="0">
-                   <i class="zmdi zmdi-shopping-cart-plus" onclick="addedToCart(${item.id})" ></i>
+                   <i class="zmdi zmdi-shopping-cart-plus"  onclick="addedToCart(${item.id})"></i>
                </a>
            </li>
 
         </ul>
          </div>
          <div class="card-footer">
-          <a href="product-page-makeup.html" class="card-link">See More ...</a>
-        </div> 
-        </div>
+           <a href="product-page-mobile.html" class="card-link">See More ...</a>
+           
+         </div>
+       </div>
          `;
  
      });
