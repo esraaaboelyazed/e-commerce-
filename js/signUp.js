@@ -13,6 +13,13 @@
          this.lname = lname;
          this.email = email;
          this.password = password;
+         this.username = fname + lname;
+         this.address = '';
+         this.city = '';
+         this.country = '';
+         this.postalcode = '';
+         this.aboutme = '';
+         this.photosrc = '';
      }
  }
 
@@ -31,6 +38,7 @@
                  users = [];
                  users.push(user);
                  localStorage.setItem("users", JSON.stringify(users));
+                 localStorage.setItem("current user", JSON.stringify(email));
                  //  alert("first user added");
                  e.preventDefault();
                  window.location.href = "index.html";
@@ -42,6 +50,7 @@
                      users = JSON.parse(localStorage.getItem("users"));
                      users.push(user);
                      localStorage.setItem("users", JSON.stringify(users));
+                     localStorage.setItem("current user", JSON.stringify(email));
                      //  alert("anotheruser added");
                      e.preventDefault();
                      window.location.href = "index.html";
