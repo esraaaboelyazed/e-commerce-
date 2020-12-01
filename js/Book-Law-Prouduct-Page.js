@@ -68,7 +68,7 @@ function takeComments()
  function makeSureIfLSEmpty()
   { 
          var temp = "";
-         for (var i = 0 ; i < commentsContainer2.length ; i++)
+         for (var i = 0 ; i < lawContainer2.length ; i++)
          {
           temp += `<div class="col-md-3">
           <img src="../imges/bbbb.jpg" class="w-100 my-2" >
