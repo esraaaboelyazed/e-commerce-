@@ -1993,3 +1993,34 @@ p {
     font-weight: bold;
     font-size: medium;
 }
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile+label {
+    text-align: center;
+    padding: 3px 20px;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: rgba(19, 95, 209, 0.123);
+    border-radius: 25px;
+    color: rgba(0, 0, 0, 0.733);
+    display: inline-block;
+}
+
+.inputfile:focus+label,
+.inputfile+label:hover {
+    border-radius: 25px;
+    background-color: rgba(128, 128, 128, 0.384);
+}
+
+.inputfile+label {
+    cursor: pointer;
+    /* "hand" cursor */
+}
