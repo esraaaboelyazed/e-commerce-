@@ -48,7 +48,7 @@ function takeComments()
        validateComment.innerHTML = "your review send thankyou!";
        var valueOfComment = 
        {
-           comment2 : typeComment.value
+        rom : typeComment.value
        }
        romContainer2.push(valueOfComment);
        localStorage.setItem("rom" ,JSON.stringify( romContainer2 ));
@@ -68,7 +68,7 @@ function takeComments()
  function makeSureIfLSEmpty()
   { 
          var temp = "";
-         for (var i = 0 ; i < commentsContainer2.length ; i++)
+         for (var i = 0 ; i < romContainer2.length ; i++)
          {
           temp += `<div class="col-md-3">
           <img src="../imges/bbbb.jpg" class="w-100 my-2" >
