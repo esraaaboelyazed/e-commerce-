@@ -110,7 +110,7 @@ document.getElementById('save').addEventListener('click', (e) => { //saving data
         photosrc: userimgsrc
     };
     users[userIndex - 1] = obj;
-
+    right_country.innerHTML = obj.country; // showing right country in its position when entering save button
     localStorage.setItem('users', JSON.stringify(users));
     choose_file.style.display = 'none';
     browse_label.style.display = 'none';
