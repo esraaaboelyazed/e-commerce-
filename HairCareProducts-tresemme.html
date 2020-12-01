@@ -12,61 +12,59 @@
     </head>
     <body>
         <!---start navbar section-->
-        <nav class=" navbar navbar-expand-lg navbar-light bg-light changeBg" >
-            <div class="container-fluid">
-             <a class="navbar-brand" href="#">Logo</a>
-             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav mr-auto">
-                 <li class="nav-item active">
-                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                 </li>
-                 
-             
-                 <li class="nav-item dropdown">
-                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     Categories
-                   </a>
-                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                     <a class="dropdown-item" href="#">Electronics</a>
-                     <a class="dropdown-item" href="#">Books</a>
-                     <a class="dropdown-item" href="#">Beauty</a>
-                     <a class="dropdown-item" href="#"></a>
- 
-                   </div>
-                 </li>
-                 <li class="nav-item">
-                     <a class="nav-link" href="#">About Us</a>
-                   </li>
-                 <li class="nav-item">
-                     <a class="nav-link" href="#">Contact Us</a>
-                   </li>
-                   <li class="nav-item">
-                     <li class="nav-item">
-                       <a class="nav-link" href="#">profile</a>
-                     </li>
-                     <a class="nav-link" href="LogIn.html">Sign in</a>
-                   </li>
-                   <ul id="user_info">
-                    <li class="shoppingCart">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span class="badge"></span>
-                        <div class="carts-products">
-                            <div></div>
-                            <a href="mycard.html">view all products</a>
-                            </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top changeBg">
+    <div class="container-fluid">
+     <a class="navbar-brand" href="#"><img id="editLogo" src="imges/logo/rokya's first stolen logo.png"></a>
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="navbar-nav mr-auto">
+         <li class="nav-item active">
+           <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+         </li>
+         
+     
+         <li class="nav-item dropdown">
+           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Categories
+           </a>
+           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+             <a class="dropdown-item" href="electronics.html">Electronics</a>
+             <a class="dropdown-item" href="Book.html">Books</a>
+             <a class="dropdown-item" href="BeautyPage.html">Beauty</a>
+             <a class="dropdown-item" href="Home &kitchen.html">Kitchen</a>
 
-                
-                    </li>
-                   
+           </div>
+         </li>
+         <li class="nav-item">
+             <a class="nav-link" href="index.html">About Us</a>
+           </li>
+         <li class="nav-item">
+             <a class="nav-link" href="index.html">Contact Us</a>
+           </li>
+           <li class="nav-item">
+             <li class="nav-item">
+               <a class="nav-link" href="profileuser/html/userProfile.html">profile</a>
+             </li>
+             <a class="nav-link" href="LogIn.html">Sign in</a>
+           </li>
+           <ul id="user_info">
+            <li class="shoppingCart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge"></span>
+                <div class="carts-products">
+                    <div></div>
+                    <a href="mycard.html">view all products</a>
+                    </div>
 
-                </ul>
-               </ul>
-             
-             </div>
-            </div>
-           </nav>
-            
-         <!--end navbar section-->
+        
+            </li>
+        
+       </ul>
+     
+     </div>
+    </div>
+   </nav>
+   <br><br><br>
+ <!--end navbar section-->
 
          <!-- header images -->
 
@@ -115,216 +113,7 @@
                 <div class="row ">
                    <div class="card-deck">
                        <div class="products"></div>
-                       <!-- <div class="card">
-                         <img src="imges/Hair Care img/trepr1.PNG" class="card-img-top" alt="...">
-                         <div class="card-body product-info">
-                           <h5 class="card-title">Pro Pure Damage Shampoo</h5>
-                           <div class="pro-rating">
-                               <a href="#" tabindex="0">
-                                   <i class="zmdi zmdi-star"></i>
-                               </a>
-                               <a href="#" tabindex="0">
-                                <i class="zmdi zmdi-star"></i>
-                            </a>
-                            <a href="#" tabindex="0">
-                                <i class="zmdi zmdi-star"></i>
-                            </a>
-                            <a href="#" tabindex="0">
-                                <i class="zmdi zmdi-star"></i>
-                            </a>
-                            <a href="#" tabindex="0">
-                                <i class="zmdi zmdi-star"></i>
-                            </a>
-                           </div>
-                           <h3 class="pro-price">$ 20.00</h3>
-                           <ul class="action-button">
-                             <li>
-                                 <a href="#" title="wishlist" tabindex="0">
-                                     <i class="zmdi zmdi-favorite"></i>
-                                 </a>
-                             </li>
-                             <li>
-                                <a href="#" data-toggle="modal" data-target="#productModal" title="Quickview" tabindex="0">
-                                    <i class="zmdi zmdi-zoom-in"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" title="compare" tabindex="0">
-                                    <i class="zmdi zmdi-refresh"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" title="add to cart" tabindex="0">
-                                    <i class="zmdi zmdi-shopping-cart-plus"></i>
-                                </a>
-                            </li>
-
-                         </ul>
-                         </div>
-                         <div class="card-footer">
-                            <a href="Hair-Product-Page.html" class="card-link">See More ...</a>
-                            
-                          </div>
-                         
-                         
-                       </div>
-                       <div class="card">
-                         <img src="imges/Hair Care img/trepr2.PNG" class="card-img-top" alt="...">
-                         <div class="card-body product-info">
-                           <h5 class="card-title">TRESemmé Foam Shampoo</h5>
-                           <div class="pro-rating">
-                            <a href="#" tabindex="0">
-                                <i class="zmdi zmdi-star"></i>
-                            </a>
-                            <a href="#" tabindex="0">
-                             <i class="zmdi zmdi-star"></i>
-                         </a>
-                         <a href="#" tabindex="0">
-                             <i class="zmdi zmdi-star"></i>
-                         </a>
-                         <a href="#" tabindex="0">
-                             <i class="zmdi zmdi-star"></i>
-                         </a>
-                         <a href="#" tabindex="0">
-                             <i class="zmdi zmdi-star"></i>
-                         </a>
-                        </div>
-                        <h3 class="pro-price">$ 20.50</h3>
-                        <ul class="action-button">
-                          <li>
-                              <a href="#" title="wishlist" tabindex="0">
-                                  <i class="zmdi zmdi-favorite"></i>
-                              </a>
-                          </li>
-                          <li>
-                             <a href="#" data-toggle="modal" data-target="#productModal" title="Quickview" tabindex="0">
-                                 <i class="zmdi zmdi-zoom-in"></i>
-                             </a>
-                         </li>
-                         <li>
-                             <a href="#" title="compare" tabindex="0">
-                                 <i class="zmdi zmdi-refresh"></i>
-                             </a>
-                         </li>
-                         <li>
-                             <a href="#" title="add to cart" tabindex="0">
-                                 <i class="zmdi zmdi-shopping-cart-plus"></i>
-                             </a>
-                         </li>
-
-                      </ul>
-                      
-                         </div>
-                         <div class="card-footer">
-                            <a href="Hair-Product-Page.html" class="card-link">See More ...</a>
-                            
-                          </div>
-                         
-                       </div>
-                       <div class="card">
-                         <img src="imges/Hair Care img/trepr3.PNG" class="card-img-top" alt="...">
-                         <div class="card-body product-info">
-                           <h5 class="card-title">Sulfate Free Shampoo</h5>
-                           <div class="pro-rating">
-                            <a href="#" tabindex="0">
-                                <i class="zmdi zmdi-star"></i>
-                            </a>
-                            <a href="#" tabindex="0">
-                             <i class="zmdi zmdi-star"></i>
-                         </a>
-                         <a href="#" tabindex="0">
-                             <i class="zmdi zmdi-star"></i>
-                         </a>
-                         <a href="#" tabindex="0">
-                             <i class="zmdi zmdi-star"></i>
-                         </a>
-                         <a href="#" tabindex="0">
-                             <i class="zmdi zmdi-star"></i>
-                         </a>
-                        </div>
-                        <h3 class="pro-price">$ 19.30</h3>
-                        <ul class="action-button">
-                          <li>
-                              <a href="#" title="wishlist" tabindex="0">
-                                  <i class="zmdi zmdi-favorite"></i>
-                              </a>
-                          </li>
-                          <li>
-                             <a href="#" data-toggle="modal" data-target="#productModal" title="Quickview" tabindex="0">
-                                 <i class="zmdi zmdi-zoom-in"></i>
-                             </a>
-                         </li>
-                         <li>
-                             <a href="#" title="compare" tabindex="0">
-                                 <i class="zmdi zmdi-refresh"></i>
-                             </a>
-                         </li>
-                         <li>
-                             <a href="#" title="add to cart" tabindex="0">
-                                 <i class="zmdi zmdi-shopping-cart-plus"></i>
-                             </a>
-                         </li>
-
-                      </ul>
-                         </div>
-                         <div class="card-footer">
-                            <a href="Hair-Product-Page.html" class="card-link">See More ...</a>
-                            
-                          </div>
-                         
-                       </div>
-                       <div class="card">
-                           <img src="imges/Hair Care img/trepr4.PNG" class="card-img-top" alt="...">
-                           <div class="card-body product-info">
-                             <h5 class="card-title">Moisturizing Hair Shampoo </h5>
-                             <div class="pro-rating">
-                                <a href="#" tabindex="0">
-                                    <i class="zmdi zmdi-star"></i>
-                                </a>
-                                <a href="#" tabindex="0">
-                                 <i class="zmdi zmdi-star"></i>
-                             </a>
-                             <a href="#" tabindex="0">
-                                 <i class="zmdi zmdi-star"></i>
-                             </a>
-                             <a href="#" tabindex="0">
-                                 <i class="zmdi zmdi-star"></i>
-                             </a>
-                             <a href="#" tabindex="0">
-                                 <i class="zmdi zmdi-star"></i>
-                             </a>
-                            </div>
-                            <h3 class="pro-price">$ 25.00</h3>
-                            <ul class="action-button">
-                              <li>
-                                  <a href="#" title="wishlist" tabindex="0">
-                                      <i class="zmdi zmdi-favorite"></i>
-                                  </a>
-                              </li>
-                              <li>
-                                 <a href="#" data-toggle="modal" data-target="#productModal" title="Quickview" tabindex="0">
-                                     <i class="zmdi zmdi-zoom-in"></i>
-                                 </a>
-                             </li>
-                             <li>
-                                 <a href="#" title="compare" tabindex="0">
-                                     <i class="zmdi zmdi-refresh"></i>
-                                 </a>
-                             </li>
-                             <li>
-                                 <a href="#" title="add to cart" tabindex="0">
-                                     <i class="zmdi zmdi-shopping-cart-plus"></i>
-                                 </a>
-                             </li>
-
-                          </ul>
-                           </div>
-                           <div class="card-footer">
-                            <a href="Hair-Product-Page.html" class="card-link">See More ...</a>
-                            
-                          </div>
-                           
-                         </div> -->
+                       
                          
                      </div>
 
@@ -618,7 +407,7 @@
 
 
 
-      <script src="js/jquery-3.5.0.js"></script>
+      <!-- <script src="js/jquery-3.5.0.js"></script> -->
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/tresemme.js"></script>
