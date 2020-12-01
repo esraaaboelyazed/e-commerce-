@@ -2,21 +2,22 @@ let usernotEist = false;
 let helper = 0; // to not display "wrong email and password" message after success authentication
 let userIndex;
 let form = document.getElementById('form');
+let message = document.getElementById('message');
 document.getElementById('loginbtn').addEventListener('click', (e) => { //login button in login page
     let email = document.forms["form"]["email"].value;
     let password = document.forms["form"]["password"].value;
     let usersInlocalStorage = JSON.parse(localStorage.getItem("users"));
     if (usersInlocalStorage == null) {
-        alert("website have no users yet , go to Sign Up page and Create account");
+        message.innerHTML = "website have no users yet , go to Sign Up page and Create account";
         e.preventDefault();
     } else if (usersInlocalStorage != null) {
         if (email != '' && password != '') {
-            e.preventDefault();
             usersInlocalStorage.forEach(user => {
                 if (user.email == email && user.password == password) { // loop on all users and also check if email and pass at the same user
                     usernotEist = false;
                     helper = 1;
                     localStorage.setItem("current user", JSON.stringify(email));
+                    e.preventDefault();
                     window.location.href = "index.html";
                     return false;
                 } else {
@@ -26,7 +27,8 @@ document.getElementById('loginbtn').addEventListener('click', (e) => { //login b
 
             });
             if (usernotEist && helper == 0) {
-                alert("wrong email or password");
+                e.preventDefault();
+                message.innerHTML = "wrong email or password";
                 usernotEist = false;
             }
 
@@ -71,10 +73,7 @@ document.getElementById('loginbtn').addEventListener('click', (e) => { //login b
             //     e.preventDefault();
             // }
         } else { // if the user didn't enter emaail or pass or both
-            alert("email and password required");
-            e.preventDefault();
-
-
+            message.innerHTML = "email and password required";
         }
 
     }

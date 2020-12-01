@@ -59,11 +59,11 @@
     <section class="signup">
         <form id="form">
             <h2 style="color:white">Sign Up</h2>
-            <input id="fname" type="text" name="userFirstNAme" placeholder="ex:mohamed" required><br><br>
-            <input id="lname" type="text" name="userLAstNAme" placeholder="ex:ahmed" required /><br><br>
-            <input id="password" type="password" name="password" placeholder="ex:Mohamed@1" pattern="^(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" title="Must contain at least one number, and at least 8 or more characters" required/><br><br>
-            <input id="confirm_password" type="password" name=" password " placeholder="should match " pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required/> <span id='message'></span><br><br>
-            <input id="email" type="email " name="email " title="Must contain at least @ " placeholder="mohamed@m" required/><br><br>
+            <input id="fname" type="text" name="userFirstNAme" pattern="^(?=.*[a-z]).{0,50}$" placeholder="first name" required><br><br>
+            <input id="lname" type="text" name="userLAstNAme" pattern="^(?=.*[a-z]).{0,50}$" placeholder="last name" required /><br><br>
+            <input id="password" type="password" name="password" placeholder="password" pattern="^(?=.*[a-z])(?=.*[0-9]).{8,12}$" title="required at least one number, and at least 8 or more characters , ex:mohamed1" required/><br><br>
+            <input id="confirm_password" type="password" name=" password " placeholder="confirm password" pattern="^(?=.*[a-z])(?=.*[0-9]).{8,12}$" required/> <span id='message'></span><br><br>
+            <input id="email" type="email " name="email " title="Must contain at least @ " pattern="^(?=.*[a-z])(?=.*[!@#$%^&*_=+-]).{0,100}$" placeholder="email" required/><br><br>
             <button id="signup-btn" type="submit">Sign Up</button> Already have an account?<a id="login-btn " href="login.html " style="text-decoration: none;font-family: 'play',sans-serif ; color: yellow; ">&nbsp;Log In</a>
         </form>
 

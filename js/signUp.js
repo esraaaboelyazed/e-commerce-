@@ -32,7 +32,7 @@
      let confpassword = document.forms["form"]["confirm_password"].value;
      let user = new User(fname, lname, email, password);
      //check validation
-     if (/^(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$/g.test(password) && fname != '' && lname != '' && /(?=.*[@])/g.test(email)) {
+     if (/^(?=.*[a-z])(?=.*[0-9]).{8,12}$/g.test(password) && fname != '' && lname != '' && /(?=.*[@])/g.test(email)) {
          if (password == confpassword) { // password and confirm password matches
              if (usersInlocalStorage == null) { //website contains no users
                  users = [];
@@ -40,7 +40,7 @@
                  localStorage.setItem("users", JSON.stringify(users));
                  localStorage.setItem("current user", JSON.stringify(email));
                  //  alert("first user added");
-                 e.preventDefault();
+
                  window.location.href = "index.html";
              } else if (usersInlocalStorage != null) { //website contain users
                  if (emailExist(usersInlocalStorage, email)) { // check email exist before or not
@@ -52,7 +52,7 @@
                      localStorage.setItem("users", JSON.stringify(users));
                      localStorage.setItem("current user", JSON.stringify(email));
                      //  alert("anotheruser added");
-                     e.preventDefault();
+
                      window.location.href = "index.html";
                      form.reset();
                  }
@@ -60,12 +60,10 @@
 
 
          } else { // password and confirm password not matches
-             alert("password and confirm password should match");
              $('#message').html('Not Matching').css('color', 'red');
          }
      } else { //user did not enter all values
-         alert("all values required for registeration");
-         e.preventDefault();
+
      }
  });
 
