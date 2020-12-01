@@ -48,7 +48,7 @@ function takeComments()
        validateComment.innerHTML = "your review send thankyou!";
        var valueOfComment = 
        {
-           comment2 : typeComment.value
+        rom : typeComment.value
        }
        romContainer2.push(valueOfComment);
        localStorage.setItem("rom" ,JSON.stringify( romContainer2 ));

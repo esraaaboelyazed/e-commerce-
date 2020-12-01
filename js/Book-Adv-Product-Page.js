@@ -48,7 +48,7 @@ function takeComments()
        validateComment.innerHTML = "your review send thankyou!";
        var valueOfComment = 
        {
-           comment2 : typeComment.value
+        adv : typeComment.value
        }
        advContainer2.push(valueOfComment);
        localStorage.setItem("adv" ,JSON.stringify( advContainer2 ));
