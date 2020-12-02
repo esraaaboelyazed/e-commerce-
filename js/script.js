@@ -34,12 +34,6 @@ function searchProducts(query) {
     document.getElementById("searchResults").innerHTML = temp;
 };
             
-       
-       document.getElementById("searchResults").innerHTML = temp;
- 
-
-
-
 
  let productsDom = document.querySelector(".products")
  

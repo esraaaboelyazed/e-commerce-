@@ -35,10 +35,10 @@
                         <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="media align-items-center">
                                 <span class="avatar avatar-sm rounded-circle">
-                      <img alt="Image placeholder" src="../images/35-350426_profile-icon-png-default-profile-picture-png-transparent.png">
+                      <img id="top_img" alt="Image placeholder" src="../images/35-350426_profile-icon-png-default-profile-picture-png-transparent.png">
                     </span>
                                 <div class="media-body ml-2 d-none d-lg-block">
-                                    <span class="mb-0 text-sm  font-weight-bold">user name</span>
+                                    <h2 id="top_username" class="mb-0 text-sm  font-weight-bold">user name</h2>
                                 </div>
                             </div>
                         </a>
@@ -74,7 +74,9 @@
         </nav>
         <!-- Header -->
 
-        <div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="min-height: 600px; background-image: url(https://raw.githack.com/creativetimofficial/argon-dashboard/master/assets/img/theme/profile-cover.jpg); background-size: cover; background-position: center top;">
+        <div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="min-height: 600px; 
+         background-image: url(https://raw.githack.com/creativetimofficial/argon-dashboard/master/assets/img/theme/profile-cover.jpg);
+          background-size: contain; background-position: center top;">
             <!-- Mask -->
             <span class="mask bg-gradient-default opacity-8"></span>
             <!-- Header container -->
@@ -97,7 +99,7 @@
                             <div class="col-lg-3 order-lg-2">
 
                                 <div class="card-profile-image">
-                                    <img id='userimg' src="" class="rounded-circle  " alt="avatar">
+                                    <img id='userimg' src="../images/35-350426_profile-icon-png-default-profile-picture-png-transparent.png" class="rounded-circle  " alt="avatar">
                                 </div>
 
                             </div>
@@ -128,8 +130,8 @@
                                 </div>
                             </div>
                             <div class="text-center">
-                                <input id="choose_file" accept="image/*" style="display:none;text-align: center;margin: auto;color: rgba(19, 95, 209, 0.623);" type="file" class="text-center center-block file-upload">
-
+                                <input id="choose_file" accept="image/*" style="display:none;text-align: center;margin: auto;color: rgba(19, 95, 209, 0.623);" type="file" class="inputfile text-center center-block file-upload">
+                                <label id="browse_label" style="display: none;" for="choose_file">browse photo</label>
                                 <h3 id="right_user_name"> username<span class="font-weight-light"></span>
                                 </h3>
                                 <div class="h5 font-weight-300">

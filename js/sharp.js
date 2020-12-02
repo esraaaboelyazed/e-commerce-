@@ -19,7 +19,7 @@ let badgeDom = document.querySelector(".badge");
     qty:1,
 
 },
-{  id: 3,
+{    id: 3,
     title: "Microwave Oven",
     price:"$36.00",
     imageUrl: "imges/Home&kitchen/panas3.jpg",
@@ -95,6 +95,7 @@ function drawProductsUI(){
           
         </div>
       </div> 
+
         `;
 
     });

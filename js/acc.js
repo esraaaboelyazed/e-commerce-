@@ -19,7 +19,7 @@ let productsDom = document.querySelector(".products")
      qty:1,
  
  },
- {  id: 3,
+ {  id: 103,
      title: "TP-Link",
      price:"$636.00",
      imageUrl: "imges/accessory-img/tplink2.jpg",
@@ -27,28 +27,28 @@ let productsDom = document.querySelector(".products")
  
  },
  {
-      id: 4,
+      id: 104,
       title: "Selfy Stick",
       price:"$417.00",
       imageUrl: "imges/accessory-img/selfi.jpg",
       qty:1
  },
  {
-    id: 5,
+    id: 105,
     title: "Air Pod",
     price:"$137.00",
-    imageUrl: "imges/accessory-img/hphone.jpg",
+    imageUrl: "imges/accessory-img/airpod.jpg",
     qty:1
 },
 {
-    id: 6,
+    id: 106,
     title: "Head Phone",
     price:"$117.00",
     imageUrl: "imges/accessory-img/hphone.jpg",
     qty:1
 },
 {
-    id: 7,
+    id: 107,
     title: "Selfy Stick",
     price:"$217.00",
     imageUrl: "imges/accessory-img/selfi.jpg",

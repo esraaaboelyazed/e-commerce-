@@ -21,48 +21,58 @@
     <body>
         <!---start navbar section-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top changeBg">
-    <div class="container-fluid">
-     <a class="navbar-brand" href="#"><img id="editLogo" src="imges/logo/rokya's first stolen logo.png"></a>
-     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-       <ul class="navbar-nav mr-auto">
-         <li class="nav-item active">
-           <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-         </li>
-         
-     
-         <li class="nav-item dropdown">
-           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-             Categories
-           </a>
-           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-             <a class="dropdown-item" href="electronics.html">Electronics</a>
-             <a class="dropdown-item" href="Book.html">Books</a>
-             <a class="dropdown-item" href="BeautyPage.html">Beauty</a>
-             <a class="dropdown-item" href="Home &kitchen.html">Kitchen</a>
+  <div class="container-fluid">
+   <a class="navbar-brand" href="#"><img id="editLogo" src="imges/logo/rokya's first stolen logo.png"></a>
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav mr-auto">
+       <li class="nav-item active">
+         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+       </li>
+       
+   
+       <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Categories
+         </a>
+         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+           <a class="dropdown-item" href="electronics.html">Electronics</a>
+           <a class="dropdown-item" href="Book.html">Books</a>
+           <a class="dropdown-item" href="BeautyPage.html">Beauty</a>
+           <a class="dropdown-item" href="Home &kitchen.html">Kitchen</a>
 
-           </div>
+         </div>
+       </li>
+       <li class="nav-item">
+           <a class="nav-link" href="index.html">About Us</a>
+         </li>
+       <li class="nav-item">
+           <a class="nav-link" href="index.html">Contact Us</a>
          </li>
          <li class="nav-item">
-             <a class="nav-link" href="index.html">About Us</a>
-           </li>
-         <li class="nav-item">
-             <a class="nav-link" href="index.html">Contact Us</a>
-           </li>
            <li class="nav-item">
-             <li class="nav-item">
-               <a class="nav-link" href="profileuser/html/userProfile.html">profile</a>
-             </li>
-             <a class="nav-link" href="LogIn.html">Sign in</a>
+             <a class="nav-link" href="profileuser/html/userProfile.html">profile</a>
            </li>
-           
-        
-       </ul>
-     
-     </div>
-    </div>
-   </nav>
-   <br><br><br>
- <!--end navbar section-->
+           <a class="nav-link" href="LogIn.html">Sign in</a>
+         </li>
+         <ul id="user_info">
+          <li class="shoppingCart">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="badge"></span>
+              <div class="carts-products">
+                  <div></div>
+                  <a href="mycard.html">view all products</a>
+                  </div>
+
+      
+          </li>
+      
+     </ul>
+   
+   </div>
+  </div>
+ </nav>
+ <br><br><br>
+<!--end navbar section-->
         <div class="slider-area plr-185 mb-80 section">
              <div class="container-fluid">
                 <div class="slider-content">
@@ -178,7 +188,10 @@
                 <div class="by-brand-product">
                     <div class="row ">
                        <div class="card-deck">
-                           <div class="card">
+                           <div class="products">
+
+                           </div>
+                           <!-- <div class="card">
                              <img src="imges/Body Care img/best1.PNG" class="card-img-top" alt="...">
                              <div class="card-body product-info">
                                <h5 class="card-title">Dry Skin Lotion</h5>
@@ -386,7 +399,7 @@
                                 
                               </div>
                                
-                             </div>
+                             </div> -->
                              
                          </div>
 
@@ -441,7 +454,7 @@
        <!--end of footer dection-->
 
 
-
+       <script src="js/bodycare.js"></script>
       <script src="js/popper.min.js"></script>
       <!-- <script src="js/jquery-3.5.0.js"></script> -->
       <script src="js/bootstrap.min.js"></script>
